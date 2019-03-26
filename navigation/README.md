@@ -6,7 +6,7 @@
 
 ## Latest Versions
 
-When adding the required dependencies, it's highly recommended to check [maven.google.com](maven.google.com) for the latest versions.
+When adding the required dependencies, it's highly recommended to check [maven.google.com](http://maven.google.com) for the latest versions.
 
 ## Java Code
 
