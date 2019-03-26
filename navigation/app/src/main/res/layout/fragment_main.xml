@@ -4,21 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="@dimen/default_padding">
 
     <Button
         android:id="@+id/view_balances_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="View balances" />
+        android:text="@string/button_view_balances" />
 
     <Button
         android:id="@+id/pay_someone_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="8dp"
-        android:text="Pay someone" />
+        android:layout_marginTop="@dimen/default_padding"
+        android:text="@string/button_pay_someone" />
 
 </LinearLayout>

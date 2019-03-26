@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="@dimen/default_padding">
 
     <TextView
         android:id="@+id/person_name"
@@ -13,34 +13,34 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:gravity="center_horizontal"
-        android:textSize="20sp"
+        android:textSize="@dimen/text_size_large"
         tools:text="Person name" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:hint="From account number">
+        android:layout_marginTop="@dimen/large_padding"
+        android:hint="@string/hint_account_number">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/from_account_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="12345" />
+            tools:text="123-456-789" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="Amount">
+        android:layout_marginTop="@dimen/default_padding"
+        android:hint="@string/hint_amount">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/amount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="1.23" />
+            tools:text="100.00" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -49,7 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="8dp"
-        android:text="Disclaimer" />
+        android:layout_marginTop="@dimen/default_padding"
+        android:text="@string/button_view_disclaimer" />
 
 </LinearLayout>

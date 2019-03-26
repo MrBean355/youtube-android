@@ -5,21 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="@dimen/default_padding">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:gravity="center_horizontal"
-        android:text="Payment complete!"
-        android:textSize="20sp" />
+        android:text="@string/message_payment_complete"
+        android:textSize="@dimen/text_size_large" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Payment to"
+        android:layout_marginTop="@dimen/large_padding"
+        android:text="@string/hint_payment_to"
         android:textColor="@color/colorAccent" />
 
     <TextView
@@ -31,27 +31,27 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="From account"
+        android:layout_marginTop="@dimen/default_padding"
+        android:text="@string/hint_account_number"
         android:textColor="@color/colorAccent" />
 
     <TextView
         android:id="@+id/from_account_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="From account number" />
+        tools:text="123-456-789" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Amount"
+        android:layout_marginTop="@dimen/default_padding"
+        android:text="@string/hint_amount"
         android:textColor="@color/colorAccent" />
 
     <TextView
         android:id="@+id/amount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="1.23" />
+        tools:text="100.00" />
 
 </LinearLayout>

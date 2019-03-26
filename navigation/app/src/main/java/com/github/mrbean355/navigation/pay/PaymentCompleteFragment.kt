@@ -3,9 +3,16 @@ package com.github.mrbean355.navigation.pay
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.github.mrbean355.navigation.R
+import kotlinx.android.synthetic.main.fragment_payment_complete.*
 
+/**
+ * See the project README for the equivalent Java code.
+ */
 class PaymentCompleteFragment : Fragment() {
+    private val args: PaymentCompleteFragmentArgs by navArgs()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +25,9 @@ class PaymentCompleteFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        // TODO: Load details from args.
+        person_name.text = args.personName
+        from_account_number.text = args.accountNumber
+        amount.text = args.amount
     }
 
     override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?) {
@@ -28,7 +37,7 @@ class PaymentCompleteFragment : Fragment() {
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         if (item?.itemId == R.id.action_done) {
-            // TODO: Navigate to start.
+            findNavController().navigate(R.id.action_paymentCompleteFragment_to_mainFragment)
             return true
         }
         return super.onOptionsItemSelected(item)

@@ -8,6 +8,10 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.3.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // AndroidX:
+        classpath 'androidx.navigation:navigation-safe-args-gradle-plugin:2.0.0'
+        // Pre-AndroidX:
+        // classpath 'android.arch.navigation:navigation-safe-args-gradle-plugin:1.0.0'
     }
 }
 

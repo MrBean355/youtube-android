@@ -2,6 +2,11 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+// Without Kotlin:
+// apply plugin: 'androidx.navigation.safeargs'
+// With Kotlin:
+apply plugin: 'androidx.navigation.safeargs.kotlin'
+
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -20,6 +25,23 @@ android {
 }
 
 dependencies {
+    // AndroidX without Kotlin:
+    // implementation 'androidx.navigation:navigation-fragment:2.0.0'
+    // implementation 'androidx.navigation:navigation-ui:2.0.0'
+
+    // AndroidX with Kotlin:
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.0.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.0.0'
+
+    // Pre-AndroidX without Kotlin:
+    // implementation 'android.arch.navigation:navigation-fragment:1.0.0'
+    // implementation 'android.arch.navigation:navigation-ui:1.0.0'
+
+    // Pre-AndroidX with Kotlin:
+    // implementation 'android.arch.navigation:navigation-fragment-ktx:1.0.0'
+    // implementation 'android.arch.navigation:navigation-ui-ktx:1.0.0'
+
+    // Other dependencies (not relevant):
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.cardview:cardview:1.0.0'

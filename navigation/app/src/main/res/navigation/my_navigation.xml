@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.github.mrbean355.navigation.MainFragment"
+        android:label="@string/label_home">
+        <action
+            android:id="@+id/action_mainFragment_to_viewBalancesFragment"
+            app:destination="@id/viewBalancesFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_viewPeopleFragment"
+            app:destination="@id/viewPeopleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewBalancesFragment"
+        android:name="com.github.mrbean355.navigation.balances.ViewBalancesFragment"
+        android:label="@string/label_view_balances" />
+    <fragment
+        android:id="@+id/viewPeopleFragment"
+        android:name="com.github.mrbean355.navigation.pay.ViewPeopleFragment"
+        android:label="@string/label_view_people">
+        <action
+            android:id="@+id/action_viewPeopleFragment_to_payPersonFragment"
+            app:destination="@id/payPersonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/payPersonFragment"
+        android:name="com.github.mrbean355.navigation.pay.PayPersonFragment"
+        android:label="@string/label_pay_person">
+        <action
+            android:id="@+id/action_payPersonFragment_to_viewDisclaimerFragment"
+            app:destination="@id/viewDisclaimerFragment" />
+        <action
+            android:id="@+id/action_payPersonFragment_to_paymentCompleteFragment"
+            app:destination="@id/paymentCompleteFragment" />
+        <argument
+            android:name="personName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewDisclaimerFragment"
+        android:name="com.github.mrbean355.navigation.pay.ViewDisclaimerFragment"
+        android:label="@string/label_view_disclaimer" />
+    <fragment
+        android:id="@+id/paymentCompleteFragment"
+        android:name="com.github.mrbean355.navigation.pay.PaymentCompleteFragment"
+        android:label="@string/label_payment_complete">
+        <action
+            android:id="@+id/action_paymentCompleteFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@+id/mainFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="personName"
+            app:argType="string" />
+        <argument
+            android:name="accountNumber"
+            app:argType="string" />
+        <argument
+            android:name="amount"
+            app:argType="string" />
+    </fragment>
+</navigation>

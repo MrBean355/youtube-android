@@ -3,10 +3,16 @@ package com.github.mrbean355.navigation.pay
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.github.mrbean355.navigation.R
 import kotlinx.android.synthetic.main.fragment_pay_person.*
 
+/**
+ * See the project README for the equivalent Java code.
+ */
 class PayPersonFragment : Fragment() {
+    private val args: PayPersonFragmentArgs by navArgs()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,10 +25,10 @@ class PayPersonFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        // TODO: Load person from args.
+        person_name.text = args.personName
 
         disclaimer_button.setOnClickListener {
-            // TODO: Navigate to disclaimer.
+            findNavController().navigate(R.id.action_payPersonFragment_to_viewDisclaimerFragment)
         }
     }
 
@@ -33,7 +39,12 @@ class PayPersonFragment : Fragment() {
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         if (item?.itemId == R.id.action_next) {
-            // TODO: Navigate to next fragment.
+            val directions = PayPersonFragmentDirections.actionPayPersonFragmentToPaymentCompleteFragment(
+                    args.personName,
+                    from_account_number.text.toString(),
+                    amount.text.toString()
+            )
+            findNavController().navigate(directions)
             return true
         }
         return super.onOptionsItemSelected(item)

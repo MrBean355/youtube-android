@@ -5,5 +5,5 @@
     android:id="@+id/disclaimer_text"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp"
+    android:padding="@dimen/default_padding"
     tools:text="Disclaimer text here" />

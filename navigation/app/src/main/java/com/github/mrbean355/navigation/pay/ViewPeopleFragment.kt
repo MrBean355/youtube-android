@@ -5,10 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.github.mrbean355.navigation.R
 import com.github.mrbean355.navigation.pay.adapter.PeopleAdapter
 import kotlinx.android.synthetic.main.fragment_view_people.*
 
+/**
+ * See the project README for the equivalent Java code.
+ */
 class ViewPeopleFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -17,11 +21,11 @@ class ViewPeopleFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         val adapter = PeopleAdapter()
         adapter.setItems(PEOPLE)
-        adapter.setOnItemClickedListener {
-            // TODO: Navigate to next fragment.
+        adapter.setOnItemClickedListener { name ->
+            val directions = ViewPeopleFragmentDirections.actionViewPeopleFragmentToPayPersonFragment(name)
+            findNavController().navigate(directions)
         }
         people_recycler_view.adapter = adapter
     }
