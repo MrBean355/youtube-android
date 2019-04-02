@@ -1,6 +1,6 @@
 # Navigation Component
 
-[My YouTube video walkthrough](https://www.youtube.com)
+[My YouTube video walkthrough](https://www.youtube.com/watch?v=MtcRVVygP_g)
 
 [Official documentation](https://developer.android.com/guide/navigation)
 
