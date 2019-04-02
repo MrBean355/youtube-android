@@ -1,4 +1,4 @@
-package com.github.mrbean355.navigation
+package com.github.mrbean355.navigation.basic
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

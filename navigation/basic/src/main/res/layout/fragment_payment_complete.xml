@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/large_padding"
         android:text="@string/hint_payment_to"
-        android:textColor="@color/colorAccent" />
+        android:textColor="?attr/colorAccent" />
 
     <TextView
         android:id="@+id/person_name"
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/default_padding"
         android:text="@string/hint_account_number"
-        android:textColor="@color/colorAccent" />
+        android:textColor="?attr/colorAccent" />
 
     <TextView
         android:id="@+id/from_account_number"
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/default_padding"
         android:text="@string/hint_amount"
-        android:textColor="@color/colorAccent" />
+        android:textColor="?attr/colorAccent" />
 
     <TextView
         android:id="@+id/amount"

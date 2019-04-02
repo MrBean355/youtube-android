@@ -1,11 +1,11 @@
-package com.github.mrbean355.navigation.balances
+package com.github.mrbean355.navigation.basic.balances
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.github.mrbean355.navigation.R
+import com.github.mrbean355.navigation.basic.R
 
 class ViewBalancesFragment : Fragment() {
 

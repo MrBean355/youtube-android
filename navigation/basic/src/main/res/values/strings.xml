@@ -1,6 +1,4 @@
 <resources>
-    <string name="app_name">navigation</string>
-
     <string name="action_next">NEXT</string>
     <string name="action_done">DONE</string>
 

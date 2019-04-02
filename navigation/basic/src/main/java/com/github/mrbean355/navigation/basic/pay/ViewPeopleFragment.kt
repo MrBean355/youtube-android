@@ -1,4 +1,4 @@
-package com.github.mrbean355.navigation.pay
+package com.github.mrbean355.navigation.basic.pay
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.github.mrbean355.navigation.R
-import com.github.mrbean355.navigation.pay.adapter.PeopleAdapter
+import com.github.mrbean355.navigation.basic.R
+import com.github.mrbean355.navigation.basic.pay.adapter.PeopleAdapter
 import kotlinx.android.synthetic.main.fragment_view_people.*
 
 /**

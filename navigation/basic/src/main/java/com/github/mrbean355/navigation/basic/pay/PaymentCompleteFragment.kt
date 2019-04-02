@@ -1,18 +1,18 @@
-package com.github.mrbean355.navigation.pay
+package com.github.mrbean355.navigation.basic.pay
 
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.github.mrbean355.navigation.R
-import kotlinx.android.synthetic.main.fragment_pay_person.*
+import com.github.mrbean355.navigation.basic.R
+import kotlinx.android.synthetic.main.fragment_payment_complete.*
 
 /**
  * See the project README for the equivalent Java code.
  */
-class PayPersonFragment : Fragment() {
-    private val args: PayPersonFragmentArgs by navArgs()
+class PaymentCompleteFragment : Fragment() {
+    private val args: PaymentCompleteFragmentArgs by navArgs()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,31 +20,24 @@ class PayPersonFragment : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_pay_person, container, false)
+        return inflater.inflate(R.layout.fragment_payment_complete, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         person_name.text = args.personName
-
-        disclaimer_button.setOnClickListener {
-            findNavController().navigate(R.id.action_payPersonFragment_to_viewDisclaimerFragment)
-        }
+        from_account_number.text = args.accountNumber
+        amount.text = args.amount
     }
 
     override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?) {
         super.onCreateOptionsMenu(menu, inflater)
-        inflater?.inflate(R.menu.next, menu)
+        inflater?.inflate(R.menu.done, menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        if (item?.itemId == R.id.action_next) {
-            val directions = PayPersonFragmentDirections.actionPayPersonFragmentToPaymentCompleteFragment(
-                    args.personName,
-                    from_account_number.text.toString(),
-                    amount.text.toString()
-            )
-            findNavController().navigate(directions)
+        if (item?.itemId == R.id.action_done) {
+            findNavController().navigate(R.id.action_paymentCompleteFragment_to_mainFragment)
             return true
         }
         return super.onOptionsItemSelected(item)

@@ -33,7 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/first_account_balance"
-                android:textColor="@color/colorAccent"
+                android:textColor="?attr/colorAccent"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -67,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/second_account_balance"
-                android:textColor="@color/colorAccent"
+                android:textColor="?attr/colorAccent"
                 android:textStyle="bold" />
 
         </LinearLayout>
