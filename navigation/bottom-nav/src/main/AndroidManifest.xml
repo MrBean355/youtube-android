@@ -1,0 +1,8 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.mrbean355.navigation.bottomnav">
+
+    <application>
+        <activity android:name=".BottomNavActivity" />
+    </application>
+</manifest>

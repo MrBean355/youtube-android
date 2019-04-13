@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/firstBottomNavFragment"
+        android:icon="@drawable/ic_casino"
+        android:title="@string/title_first_fragment" />
+    <item
+        android:id="@+id/secondBottomNavFragment"
+        android:icon="@drawable/ic_fitness_center"
+        android:title="@string/title_second_fragment" />
+    <item
+        android:id="@+id/thirdBottomNavFragment"
+        android:icon="@drawable/ic_golf_course"
+        android:title="@string/title_third_fragment" />
+</menu>

@@ -20,4 +20,12 @@
         android:layout_marginTop="@dimen/default_padding"
         android:text="@string/button_basic" />
 
+    <Button
+        android:id="@+id/bottom_nav_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/default_padding"
+        android:text="@string/button_bottom_nav" />
+
 </LinearLayout>
