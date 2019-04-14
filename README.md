@@ -1,6 +1,6 @@
 # Android Demo Projects
 
-Source code as seen on my YouTube videos!
+Source code as seen in my YouTube videos!
 
 Demo projects are split into separate folders within this repository, check them out!
-- Navigation
+- Navigation architecture component
