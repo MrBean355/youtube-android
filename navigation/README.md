@@ -1,6 +1,8 @@
 # Navigation Component
 
-[My YouTube video walkthrough](https://www.youtube.com/watch?v=MtcRVVygP_g)
+My YouTube videos:
+- [Basic walkthrough](https://www.youtube.com/watch?v=MtcRVVygP_g)
+- [Setting up with bottom nav](https://youtu.be/ZAXvoRjdZuM)
 
 [Official documentation](https://developer.android.com/guide/navigation)
 
