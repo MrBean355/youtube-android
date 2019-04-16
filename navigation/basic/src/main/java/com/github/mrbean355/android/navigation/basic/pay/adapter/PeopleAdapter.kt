@@ -1,4 +1,4 @@
-package com.github.mrbean355.navigation.basic.pay.adapter
+package com.github.mrbean355.android.navigation.basic.pay.adapter
 
 import android.view.View
 import android.view.ViewGroup

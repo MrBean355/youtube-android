@@ -1,11 +1,11 @@
-package com.github.mrbean355.navigation.basic.pay
+package com.github.mrbean355.android.navigation.basic.pay
 
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.github.mrbean355.navigation.basic.R
+import com.github.mrbean355.android.navigation.basic.R
 import kotlinx.android.synthetic.main.fragment_payment_complete.*
 
 /**

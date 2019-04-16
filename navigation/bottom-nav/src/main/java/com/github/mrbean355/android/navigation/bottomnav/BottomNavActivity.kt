@@ -1,4 +1,4 @@
-package com.github.mrbean355.navigation.bottomnav
+package com.github.mrbean355.android.navigation.bottomnav
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

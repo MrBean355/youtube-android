@@ -1,4 +1,4 @@
-package com.github.mrbean355.navigation.basic
+package com.github.mrbean355.android.navigation.basic
 
 import android.os.Bundle
 import android.view.LayoutInflater

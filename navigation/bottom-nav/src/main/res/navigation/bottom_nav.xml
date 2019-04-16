@@ -7,11 +7,11 @@
 
     <fragment
         android:id="@+id/firstBottomNavFragment"
-        android:name="com.github.mrbean355.navigation.bottomnav.FirstBottomNavFragment" />
+        android:name="com.github.mrbean355.android.navigation.bottomnav.FirstBottomNavFragment" />
     <fragment
         android:id="@+id/secondBottomNavFragment"
-        android:name="com.github.mrbean355.navigation.bottomnav.SecondBottomNavFragment" />
+        android:name="com.github.mrbean355.android.navigation.bottomnav.SecondBottomNavFragment" />
     <fragment
         android:id="@+id/thirdBottomNavFragment"
-        android:name="com.github.mrbean355.navigation.bottomnav.ThirdBottomNavFragment" />
+        android:name="com.github.mrbean355.android.navigation.bottomnav.ThirdBottomNavFragment" />
 </navigation>
