@@ -22,9 +22,7 @@ class PokemonAdapter : RecyclerView.Adapter<PokemonAdapter.ViewHolder>() {
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.name.text = items[position].name
-        // TODO: Implement URL
-        // holder.url.text = items[position].url
-        holder.url.visibility = View.GONE
+        holder.url.text = items[position].url
     }
 
     override fun getItemCount() = items.size
