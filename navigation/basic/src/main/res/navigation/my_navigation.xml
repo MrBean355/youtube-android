@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.github.mrbean355.navigation.basic.MainFragment"
+        android:name="com.github.mrbean355.android.navigation.basic.MainFragment"
         android:label="@string/label_home">
         <action
             android:id="@+id/action_mainFragment_to_viewBalancesFragment"
@@ -18,11 +18,11 @@
     </fragment>
     <fragment
         android:id="@+id/viewBalancesFragment"
-        android:name="com.github.mrbean355.navigation.basic.balances.ViewBalancesFragment"
+        android:name="com.github.mrbean355.android.navigation.basic.balances.ViewBalancesFragment"
         android:label="@string/label_view_balances" />
     <fragment
         android:id="@+id/viewPeopleFragment"
-        android:name="com.github.mrbean355.navigation.basic.pay.ViewPeopleFragment"
+        android:name="com.github.mrbean355.android.navigation.basic.pay.ViewPeopleFragment"
         android:label="@string/label_view_people">
         <action
             android:id="@+id/action_viewPeopleFragment_to_payPersonFragment"
@@ -30,7 +30,7 @@
     </fragment>
     <fragment
         android:id="@+id/payPersonFragment"
-        android:name="com.github.mrbean355.navigation.basic.pay.PayPersonFragment"
+        android:name="com.github.mrbean355.android.navigation.basic.pay.PayPersonFragment"
         android:label="@string/label_pay_person">
         <action
             android:id="@+id/action_payPersonFragment_to_viewDisclaimerFragment"
@@ -44,11 +44,11 @@
     </fragment>
     <fragment
         android:id="@+id/viewDisclaimerFragment"
-        android:name="com.github.mrbean355.navigation.basic.pay.ViewDisclaimerFragment"
+        android:name="com.github.mrbean355.android.navigation.basic.pay.ViewDisclaimerFragment"
         android:label="@string/label_view_disclaimer" />
     <fragment
         android:id="@+id/paymentCompleteFragment"
-        android:name="com.github.mrbean355.navigation.basic.pay.PaymentCompleteFragment"
+        android:name="com.github.mrbean355.android.navigation.basic.pay.PaymentCompleteFragment"
         android:label="@string/label_payment_complete">
         <action
             android:id="@+id/action_paymentCompleteFragment_to_mainFragment"

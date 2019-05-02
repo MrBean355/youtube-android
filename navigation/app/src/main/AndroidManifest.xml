@@ -1,6 +1,6 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.github.mrbean355.navigation">
+    package="com.github.mrbean355.android.navigation">
 
     <application
         android:allowBackup="true"
