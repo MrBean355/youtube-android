@@ -4,8 +4,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.github.mrbean355.android.dagger2.data.Hero
 import com.github.mrbean355.android.dagger2.data.HeroRepository
+import javax.inject.Inject
 
-class ViewHeroesViewModel(private val repository: HeroRepository) {
+class ViewHeroesViewModel @Inject constructor(private val repository: HeroRepository) {
 
     fun getHeroes(): LiveData<List<Hero>> {
         val liveData = MutableLiveData<List<Hero>>()
