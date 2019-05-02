@@ -1,27 +1,17 @@
 package com.github.mrbean355.android.viewmodel
 
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_view_pokemon.*
 
 class ViewPokemonActivity : AppCompatActivity() {
-    private lateinit var adapter: PokemonAdapter
-    private lateinit var viewModel: ViewPokemonViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_view_pokemon)
-
-        adapter = PokemonAdapter()
-        recycler_view.adapter = adapter
-
-        viewModel = ViewPokemonViewModel()
-        viewModel.initialise { items ->
-            runOnUiThread {
-                progress_bar.visibility = View.GONE
-                adapter.setItems(items)
-            }
+        setContentView(R.layout.activity_fragment_container)
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                    .add(R.id.fragment_container, ViewPokemonFragment())
+                    .commit()
         }
     }
 }
