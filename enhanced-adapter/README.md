@@ -1,7 +1,7 @@
 # Enhanced Adapter
 
 My YouTube videos:
-- [Basic walkthrough](https://youtu.be/)
+- [Basic walkthrough](https://youtu.be/Hpt4hIEK7iI)
 
 [GitHub](https://github.com/MrBean355/enhanced-adapter/)
 
