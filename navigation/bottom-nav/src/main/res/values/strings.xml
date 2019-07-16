@@ -1,6 +1,4 @@
 <resources>
-    <string name="app_name">bottom nav</string>
-
     <string name="title_first_fragment">First</string>
     <string name="title_second_fragment">Second</string>
     <string name="title_third_fragment">Third</string>

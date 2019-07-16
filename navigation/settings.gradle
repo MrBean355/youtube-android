@@ -1,1 +1,1 @@
-include 'app', ':basic', ':bottom-nav'
+include 'app', ':basic', ':bottom-nav', ':nav-drawer'
