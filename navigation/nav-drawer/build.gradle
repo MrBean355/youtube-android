@@ -20,6 +20,8 @@ android {
 
 dependencies {
     implementation 'androidx.drawerlayout:drawerlayout:1.0.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.0.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.0.0'
 
     // Other dependencies (not relevant):
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"

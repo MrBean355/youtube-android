@@ -7,6 +7,9 @@
         <activity
             android:name=".NavDrawerActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NavDrawerActivity_Java"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

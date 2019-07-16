@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.github.mrbean355.android.navigation.basic.MainActivity
 import com.github.mrbean355.android.navigation.bottomnav.BottomNavActivity
 import com.github.mrbean355.android.navigation.navdrawer.NavDrawerActivity
+import com.github.mrbean355.android.navigation.navdrawer.NavDrawerActivity_Java
 import kotlinx.android.synthetic.main.activity_launch.*
 
 class LaunchActivity : AppCompatActivity() {
@@ -19,8 +20,11 @@ class LaunchActivity : AppCompatActivity() {
         bottom_nav_button.setOnClickListener {
             startActivity(Intent(this, BottomNavActivity::class.java))
         }
-        nav_drawer_button.setOnClickListener {
+        nav_drawer_kt_button.setOnClickListener {
             startActivity(Intent(this, NavDrawerActivity::class.java))
+        }
+        nav_drawer_java_button.setOnClickListener {
+            startActivity(Intent(this, NavDrawerActivity_Java::class.java))
         }
     }
 }

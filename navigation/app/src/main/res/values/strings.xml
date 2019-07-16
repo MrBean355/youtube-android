@@ -4,5 +4,7 @@
     <string name="label_choose_demo">What to demo?</string>
     <string name="button_basic">Basic</string>
     <string name="button_bottom_nav">Bottom Nav</string>
-    <string name="button_nav_drawer">Nav Drawer</string>
+    <string name="label_nav_drawer">Nav Drawer</string>
+    <string name="button_kt">Kotlin</string>
+    <string name="button_java">Java</string>
 </resources>

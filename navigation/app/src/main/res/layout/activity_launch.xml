@@ -28,12 +28,34 @@
         android:layout_marginTop="@dimen/default_padding"
         android:text="@string/button_bottom_nav" />
 
-    <Button
-        android:id="@+id/nav_drawer_button"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/default_padding"
-        android:text="@string/button_nav_drawer"/>
+        android:text="@string/label_nav_drawer" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/nav_drawer_kt_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/button_kt" />
+
+        <Button
+            android:id="@+id/nav_drawer_java_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/default_margin"
+            android:text="@string/button_java" />
+
+    </LinearLayout>
 
 </LinearLayout>
