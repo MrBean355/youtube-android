@@ -1,9 +1,9 @@
 # Navigation
 
 My YouTube videos:
-- [Basic walkthrough](https://www.youtube.com/watch?v=MtcRVVygP_g)
+- [Basic walkthrough](https://www.youtu.be/MtcRVVygP_g)
 - [Setting up with bottom nav](https://youtu.be/ZAXvoRjdZuM)
-- [Setting up with nav drawer](https://youtu.be/)
+- [Setting up with nav drawer](https://youtu.be/wv5VFEcnb-8)
 
 [Official documentation](https://developer.android.com/guide/navigation)
 
