@@ -3,6 +3,7 @@
 My YouTube videos:
 - [Basic walkthrough](https://www.youtube.com/watch?v=MtcRVVygP_g)
 - [Setting up with bottom nav](https://youtu.be/ZAXvoRjdZuM)
+- [Setting up with nav drawer](https://youtu.be/)
 
 [Official documentation](https://developer.android.com/guide/navigation)
 
