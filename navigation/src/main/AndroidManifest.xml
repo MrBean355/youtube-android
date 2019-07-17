@@ -1,0 +1,17 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.mrbean355.android.navigation">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <activity android:name=".NavigationLandingActivity" />
+
+        <activity android:name=".basic.BasicNavigationActivity" />
+
+        <activity android:name=".bottomnav.BottomNavActivity" />
+
+    </application>
+
+</manifest>

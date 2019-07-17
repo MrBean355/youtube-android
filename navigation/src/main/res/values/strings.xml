@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Landing -->
+    <string name="label_choose_demo">What to demo?</string>
+    <string name="button_basic">Basic</string>
+    <string name="button_bottom_nav">Bottom Nav</string>
+
+    <!-- Basic -->
+    <string name="action_next">NEXT</string>
+    <string name="action_done">DONE</string>
+
+    <string name="label_home">Home</string>
+    <string name="button_view_balances">View balances</string>
+    <string name="button_pay_someone">Pay someone</string>
+
+    <string name="label_view_balances">View Balances</string>
+    <string name="first_account_name">First account</string>
+    <string name="first_account_number">123-456-789</string>
+    <string name="first_account_balance">1 000.00</string>
+    <string name="second_account_name">Second account</string>
+    <string name="second_account_number">987-654-321</string>
+    <string name="second_account_balance">-100.00</string>
+
+    <string name="label_view_people">People</string>
+
+    <string name="label_pay_person">Pay Someone</string>
+    <string name="hint_account_number">From account number</string>
+    <string name="hint_amount">Amount</string>
+    <string name="button_view_disclaimer">Disclaimer</string>
+
+    <string name="label_view_disclaimer">Disclaimer</string>
+
+    <string name="label_payment_complete">Payment Complete</string>
+    <string name="message_payment_complete">Payment complete!</string>
+    <string name="hint_payment_to">Payment to</string>
+
+    <!-- Bottom Nav -->
+    <string name="title_first_fragment">First</string>
+    <string name="title_second_fragment">Second</string>
+    <string name="title_third_fragment">Third</string>
+
+    <string name="label_first_fragment_content">This is the first fragment!</string>
+    <string name="label_second_fragment_content">Now you\'re on the second fragment!</string>
+    <string name="label_third_fragment_content">Finally arrived on the third fragment!</string>
+
+</resources>

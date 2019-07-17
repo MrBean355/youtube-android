@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Navigation</string>
-
-    <string name="label_choose_demo">What to demo?</string>
-    <string name="button_basic">Basic</string>
-    <string name="button_bottom_nav">Bottom Nav</string>
-</resources>
