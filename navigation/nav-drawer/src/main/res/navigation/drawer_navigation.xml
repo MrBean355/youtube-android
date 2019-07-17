@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@id/nav_home"
+        android:name="com.github.mrbean355.android.navigation.navdrawer.fragment.HomeFragment"
+        android:label="@string/menu_home" />
+    <fragment
+        android:id="@id/nav_gallery"
+        android:name="com.github.mrbean355.android.navigation.navdrawer.fragment.GalleryFragment"
+        android:label="@string/menu_gallery" />
+    <fragment
+        android:id="@id/nav_send"
+        android:name="com.github.mrbean355.android.navigation.navdrawer.fragment.SendFragment"
+        android:label="@string/menu_send" />
+    <fragment
+        android:id="@id/nav_share"
+        android:name="com.github.mrbean355.android.navigation.navdrawer.fragment.ShareFragment"
+        android:label="@string/menu_share">
+        <action
+            android:id="@+id/action_nav_share_to_nav_details"
+            app:destination="@id/nav_details" />
+    </fragment>
+    <fragment
+        android:id="@id/nav_slideshow"
+        android:name="com.github.mrbean355.android.navigation.navdrawer.fragment.SlideshowFragment"
+        android:label="@string/menu_slideshow" />
+    <fragment
+        android:id="@id/nav_tools"
+        android:name="com.github.mrbean355.android.navigation.navdrawer.fragment.ToolsFragment"
+        android:label="@string/menu_tools" />
+    <fragment
+        android:id="@+id/nav_details"
+        android:name="com.github.mrbean355.android.navigation.navdrawer.fragment.DetailsFragment"
+        android:label="@string/menu_details" />
+</navigation>
