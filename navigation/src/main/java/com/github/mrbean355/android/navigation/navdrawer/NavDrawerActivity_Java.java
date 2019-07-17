@@ -2,10 +2,6 @@ package com.github.mrbean355.android.navigation.navdrawer;
 
 import android.os.Bundle;
 
-import com.google.android.material.navigation.NavigationView;
-
-import java.util.Set;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -16,6 +12,11 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+
+import com.github.mrbean355.android.navigation.R;
+import com.google.android.material.navigation.NavigationView;
+
+import java.util.Set;
 
 public class NavDrawerActivity_Java extends AppCompatActivity {
     private DrawerLayout drawerLayout;

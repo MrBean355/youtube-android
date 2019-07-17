@@ -44,4 +44,21 @@
     <string name="label_second_fragment_content">Now you\'re on the second fragment!</string>
     <string name="label_third_fragment_content">Finally arrived on the third fragment!</string>
 
+    <!-- Nav Drawer -->
+    <string name="label_nav_drawer">Nav Drawer</string>
+    <string name="button_kt">Kotlin</string>
+    <string name="button_java">Java</string>
+
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_group_communicate">Communicate</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_details">Details</string>
+
 </resources>

@@ -6,10 +6,10 @@
     android:background="@drawable/side_nav_bar"
     android:gravity="bottom"
     android:orientation="vertical"
-    android:paddingLeft="@dimen/default_margin"
-    android:paddingTop="@dimen/default_margin"
-    android:paddingRight="@dimen/default_margin"
-    android:paddingBottom="@dimen/default_margin"
+    android:paddingLeft="@dimen/default_padding"
+    android:paddingTop="@dimen/default_padding"
+    android:paddingRight="@dimen/default_padding"
+    android:paddingBottom="@dimen/default_padding"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <TextView

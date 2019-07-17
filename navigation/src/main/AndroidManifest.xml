@@ -12,6 +12,14 @@
 
         <activity android:name=".bottomnav.BottomNavActivity" />
 
+        <activity
+            android:name=".navdrawer.NavDrawerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".navdrawer.NavDrawerActivity_Java"
+            android:theme="@style/AppTheme.NoActionBar" />
+
     </application>
 
 </manifest>

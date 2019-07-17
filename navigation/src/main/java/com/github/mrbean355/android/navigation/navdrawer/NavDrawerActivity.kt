@@ -9,6 +9,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.github.mrbean355.android.navigation.R
 import kotlinx.android.synthetic.main.activity_nav_drawer.*
 
 /**
