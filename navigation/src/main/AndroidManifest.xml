@@ -1,0 +1,23 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.mrbean355.android.navigation">
+
+    <application>
+
+        <activity android:name=".NavigationLandingActivity" />
+
+        <activity android:name=".basic.BasicNavigationActivity" />
+
+        <activity android:name=".bottomnav.BottomNavActivity" />
+
+        <activity
+            android:name=".navdrawer.NavDrawerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".navdrawer.NavDrawerActivity_Java"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+    </application>
+
+</manifest>

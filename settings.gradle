@@ -1,0 +1,6 @@
+include ':app',
+        ':dagger-2',
+        ':enhanced-adapter',
+        ':navigation',
+        ':room',
+        ':view-model'

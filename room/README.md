@@ -1,4 +1,4 @@
-# Room Persistence Library
+# Room
 
 My YouTube videos:
 - [Basic walkthrough](https://youtu.be/YVNcrcwZctY)

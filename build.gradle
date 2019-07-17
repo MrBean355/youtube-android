@@ -1,0 +1,51 @@
+buildscript {
+    /** Various versions to be used throughout all modules. */
+    ext {
+        // Android
+        appcompat_version = '1.0.2'
+        core_version = '1.0.2'
+        material_version = '1.0.0'
+        navigation_version = '2.0.0'
+        recyclerview_version = '1.0.0'
+        room_version = '2.1.0'
+
+        // Third-party
+        dagger_version = '2.23.1'
+        enhanced_adapter_version = '1.0.0'
+        kotlin_version = '1.3.41'
+        retrofit_version = '2.6.0'
+
+        // SDKs
+        compile_sdk = 28
+        min_sdk = 19
+        target_sdk = 28
+    }
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        /* BEGIN: section for Navigation component */
+
+        // AndroidX:
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigation_version"
+        // Pre-AndroidX:
+        // classpath 'android.arch.navigation:navigation-safe-args-gradle-plugin:1.0.0'
+
+        /* END: section for Navigation component */
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

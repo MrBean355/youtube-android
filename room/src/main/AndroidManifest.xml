@@ -1,0 +1,13 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.mrbean355.android.room">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application>
+
+        <activity android:name=".ViewPokemonActivity" />
+
+    </application>
+
+</manifest>
