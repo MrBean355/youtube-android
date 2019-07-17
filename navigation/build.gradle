@@ -17,8 +17,6 @@ android {
 }
 
 dependencies {
-    final navigation_version = '2.0.0'
-
     // AndroidX with Kotlin:
     implementation "androidx.navigation:navigation-fragment-ktx:$navigation_version"
     implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
@@ -38,5 +36,6 @@ dependencies {
     // Other dependencies (not relevant):
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "androidx.appcompat:appcompat:$appcompat_version"
+    implementation "androidx.core:core-ktx:$core_version"
     implementation "androidx.recyclerview:recyclerview:$recyclerview_version"
 }

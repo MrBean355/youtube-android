@@ -1,9 +1,5 @@
-include ':app'
-
-file('.').listFiles().each {
-    if (it.isDirectory() && it.list().contains('build.gradle')) {
-        final projectName = ":${it.name}"
-        include projectName
-        project(projectName).projectDir = file(it.path)
-    }
-}
+include ':app',
+        ':dagger-2',
+        ':enhanced-adapter',
+        ':navigation',
+        ':room'

@@ -12,8 +12,6 @@ android {
 }
 
 dependencies {
-    final room_version = "2.1.0"
-
     implementation "androidx.room:room-runtime:$room_version"
     // For Java use 'annotationProcessor' instead of 'kapt':
     kapt "androidx.room:room-compiler:$room_version"
@@ -33,6 +31,7 @@ dependencies {
     // Other dependencies (not relevant):
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "androidx.appcompat:appcompat:$appcompat_version"
+    implementation "androidx.core:core-ktx:$core_version"
     implementation "androidx.recyclerview:recyclerview:$recyclerview_version"
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
