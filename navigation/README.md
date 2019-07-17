@@ -1,4 +1,4 @@
-# Navigation Architecture Component
+# Navigation
 
 My YouTube videos:
 - [Basic walkthrough](https://www.youtube.com/watch?v=MtcRVVygP_g)
