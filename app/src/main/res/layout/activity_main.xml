@@ -16,6 +16,13 @@
         android:text="@string/action_dagger_2" />
 
     <Button
+        android:id="@+id/action_enhanced_adapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/action_enhanced_adapter" />
+
+    <Button
         android:id="@+id/action_navigation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

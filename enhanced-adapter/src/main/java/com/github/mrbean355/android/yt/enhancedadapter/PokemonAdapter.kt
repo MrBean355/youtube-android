@@ -18,7 +18,7 @@ class PokemonAdapter : EnhancedAdapter<Pokemon, PokemonAdapter.ViewHolder>(Pokem
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.name.text = getItemAt(position).name
-        holder.itemView.setBackgroundColor(ContextCompat.getColor(holder.itemView.context, if (isItemSelected(position)) R.color.colorAccent else android.R.color.transparent))
+        holder.itemView.setBackgroundColor(ContextCompat.getColor(holder.itemView.context, if (isItemSelected(position)) android.R.color.holo_purple else android.R.color.transparent))
         holder.itemView.setOnClickListener {
             onItemClicked(holder.adapterPosition)
         }

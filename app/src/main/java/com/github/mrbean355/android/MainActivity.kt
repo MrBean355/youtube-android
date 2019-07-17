@@ -17,6 +17,9 @@ class MainActivity : AppCompatActivity() {
         action_dagger_2.setOnClickListener {
             startActivity(Intent(this, ViewHeroesActivity::class.java))
         }
+        action_enhanced_adapter.setOnClickListener {
+            startActivity(Intent(this, com.github.mrbean355.android.yt.enhancedadapter.ViewPokemonActivity::class.java))
+        }
         action_navigation.setOnClickListener {
             startActivity(Intent(this, NavigationLandingActivity::class.java))
         }
