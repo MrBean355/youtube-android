@@ -4,12 +4,15 @@
     package="com.github.mrbean355.android.navigation.navdrawer">
 
     <application>
+
         <activity
             android:name=".NavDrawerActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".NavDrawerActivity_Java"
             android:theme="@style/AppTheme.NoActionBar" />
+
     </application>
 
 </manifest>

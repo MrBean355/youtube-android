@@ -12,6 +12,10 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -19,6 +23,7 @@ dependencies {
     implementation project(':enhanced-adapter')
     implementation project(':navigation')
     implementation project(':room')
+    implementation project(':view-model')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "androidx.appcompat:appcompat:$appcompat_version"

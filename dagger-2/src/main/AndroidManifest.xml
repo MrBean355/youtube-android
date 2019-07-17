@@ -4,10 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <application
-        android:name=".HeroesApplication"
-        android:allowBackup="true"
-        android:supportsRtl="true">
+    <application android:name=".HeroesApplication">
 
         <activity android:name=".ui.ViewHeroesActivity" />
 

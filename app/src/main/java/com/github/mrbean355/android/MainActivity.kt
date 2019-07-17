@@ -26,5 +26,8 @@ class MainActivity : AppCompatActivity() {
         action_room.setOnClickListener {
             startActivity(Intent(this, ViewPokemonActivity::class.java))
         }
+        action_view_model.setOnClickListener {
+            startActivity(Intent(this, com.github.mrbean355.android.viewmodel.ViewPokemonActivity::class.java))
+        }
     }
 }

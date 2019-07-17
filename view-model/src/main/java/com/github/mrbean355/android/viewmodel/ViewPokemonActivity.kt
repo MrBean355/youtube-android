@@ -7,7 +7,7 @@ class ViewPokemonActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_fragment_container)
+        setContentView(R.layout.vm_activity_view_pokemon)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                     .add(R.id.fragment_container, ViewPokemonFragment())

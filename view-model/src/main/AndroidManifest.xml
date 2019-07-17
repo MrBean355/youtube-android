@@ -1,6 +1,6 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.github.mrbean355.android.yt.enhancedadapter">
+    package="com.github.mrbean355.android.viewmodel">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
