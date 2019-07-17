@@ -1,5 +1,10 @@
 # Navigation
 
+Sub-sections:
+- [Basic](src/main/java/com/github/mrbean355/android/navigation/basic)
+- [Bottom Nav](src/main/java/com/github/mrbean355/android/navigation/bottomnav)
+- [Nav Drawer](src/main/java/com/github/mrbean355/android/navigation/navdrawer)
+
 My YouTube videos:
 - [Basic walkthrough](https://www.youtu.be/MtcRVVygP_g)
 - [Setting up with bottom nav](https://youtu.be/ZAXvoRjdZuM)
