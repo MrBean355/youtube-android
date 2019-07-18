@@ -7,8 +7,8 @@
     android:padding="@dimen/default_padding">
 
     <ImageView
-        android:layout_width="@dimen/image_size"
-        android:layout_height="@dimen/image_size"
+        android:layout_width="@dimen/nav_image_size"
+        android:layout_height="@dimen/nav_image_size"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/ic_golf_course" />
 

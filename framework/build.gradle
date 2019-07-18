@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
@@ -6,11 +6,8 @@ apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion compile_sdk
     defaultConfig {
-        applicationId "com.github.mrbean355.android"
         minSdkVersion min_sdk
         targetSdkVersion target_sdk
-        versionCode 1
-        versionName "1.0"
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -19,13 +16,6 @@ android {
 }
 
 dependencies {
-    implementation project(':framework')
-    implementation project(':dagger-2')
-    implementation project(':enhanced-adapter')
-    implementation project(':navigation')
-    implementation project(':room')
-    implementation project(':view-model')
-
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "androidx.appcompat:appcompat:$appcompat_version"
     implementation "androidx.core:core-ktx:$core_version"
