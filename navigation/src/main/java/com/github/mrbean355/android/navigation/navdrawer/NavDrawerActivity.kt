@@ -24,6 +24,10 @@ class NavDrawerActivity : AppCompatActivity() {
         setContentView(R.layout.activity_nav_drawer)
         setSupportActionBar(toolbar)
 
+        /*
+         * We could use `AppBarConfiguration(nav_view.menu, drawer_layout)` instead, but since the
+         * Share and Send items are nested, they won't be treated as top-level destinations.
+         */
         val topLevelDestinations = setOf(R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_tools, R.id.nav_share, R.id.nav_send)
         appBarConfig = AppBarConfiguration(topLevelDestinations, drawer_layout)
 

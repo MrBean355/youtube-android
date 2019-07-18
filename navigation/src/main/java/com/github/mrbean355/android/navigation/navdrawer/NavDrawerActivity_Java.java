@@ -4,7 +4,6 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.collection.ArraySet;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -27,7 +26,7 @@ public class NavDrawerActivity_Java extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nav_drawer);
-        setSupportActionBar(this.<Toolbar>findViewById(R.id.toolbar));
+        setSupportActionBar(findViewById(R.id.toolbar));
         drawerLayout = findViewById(R.id.drawer_layout);
 
         final Set<Integer> topLevelDestinations = new ArraySet<>();
@@ -38,6 +37,10 @@ public class NavDrawerActivity_Java extends AppCompatActivity {
         topLevelDestinations.add(R.id.nav_share);
         topLevelDestinations.add(R.id.nav_send);
 
+        /*
+         * We could use "new AppBarConfiguration.Builder(navView.getMenu())" instead, but since the
+         * Share and Send items are nested, they won't be treated as top-level destinations.
+         */
         appBarConfig = new AppBarConfiguration.Builder(topLevelDestinations)
                 .setDrawerLayout(drawerLayout)
                 .build();
