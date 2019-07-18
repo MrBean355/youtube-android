@@ -6,6 +6,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.Observer
+import com.github.mrbean355.android.framework.PokemonRepository
 import kotlinx.android.synthetic.main.activity_view_pokemon.*
 
 class ViewPokemonActivity : AppCompatActivity() {
@@ -18,7 +19,7 @@ class ViewPokemonActivity : AppCompatActivity() {
         adapter = PokemonAdapter()
         recycler_view.adapter = adapter
 
-        getPokemon().observe(this, Observer {
+        PokemonRepository().getAllAsLiveData().observe(this, Observer {
             progress_bar.visibility = View.GONE
             adapter.setItems(it)
         })

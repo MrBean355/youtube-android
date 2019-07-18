@@ -1,11 +1,10 @@
-package com.github.mrbean355.android.viewmodel
+package com.github.mrbean355.android.framework
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.github.mrbean355.android.viewmodel.data.dto.Pokemon
 
 class PokemonAdapter : RecyclerView.Adapter<PokemonAdapter.ViewHolder>() {
     private var items: List<Pokemon> = emptyList()
@@ -17,16 +16,18 @@ class PokemonAdapter : RecyclerView.Adapter<PokemonAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        return ViewHolder(inflater.inflate(android.R.layout.simple_list_item_1, parent, false))
+        return ViewHolder(inflater.inflate(R.layout.item_pokemon, parent, false))
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.textView.text = items[position].name
+        holder.name.text = items[position].name
+        holder.url.text = items[position].url
     }
 
     override fun getItemCount() = items.size
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val textView = itemView as TextView
+        val name: TextView = itemView.findViewById(R.id.pokemon_name)
+        val url: TextView = itemView.findViewById(R.id.pokemon_url)
     }
 }

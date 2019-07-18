@@ -8,17 +8,20 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.github.mrbean355.android.EnhancedAdapter
+import com.github.mrbean355.android.framework.Pokemon
 
 class PokemonAdapter : EnhancedAdapter<Pokemon, PokemonAdapter.ViewHolder>(PokemonDiffCallbacks(), 5) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        return ViewHolder(inflater.inflate(R.layout.ea_item_pokemon, parent, false))
+        return ViewHolder(inflater.inflate(R.layout.item_pokemon, parent, false))
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.name.text = getItemAt(position).name
-        holder.itemView.setBackgroundColor(ContextCompat.getColor(holder.itemView.context, if (isItemSelected(position)) android.R.color.holo_purple else android.R.color.transparent))
+        val itemAt = getItemAt(position)
+        holder.name.text = itemAt.name
+        holder.url.text = itemAt.url
+        holder.itemView.setBackgroundColor(ContextCompat.getColor(holder.itemView.context, if (isItemSelected(position)) R.color.colorAccent else android.R.color.transparent))
         holder.itemView.setOnClickListener {
             onItemClicked(holder.adapterPosition)
         }
@@ -34,6 +37,7 @@ class PokemonAdapter : EnhancedAdapter<Pokemon, PokemonAdapter.ViewHolder>(Pokem
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val name: TextView = itemView.findViewById(R.id.pokemon_name)
+        val url: TextView = itemView.findViewById(R.id.pokemon_url)
     }
 }
 

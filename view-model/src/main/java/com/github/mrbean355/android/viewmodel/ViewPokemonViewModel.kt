@@ -1,8 +1,8 @@
 package com.github.mrbean355.android.viewmodel
 
 import android.os.AsyncTask
-import com.github.mrbean355.android.viewmodel.data.PokemonRepository
-import com.github.mrbean355.android.viewmodel.data.dto.Pokemon
+import com.github.mrbean355.android.framework.Pokemon
+import com.github.mrbean355.android.framework.PokemonRepository
 
 class ViewPokemonViewModel {
 
