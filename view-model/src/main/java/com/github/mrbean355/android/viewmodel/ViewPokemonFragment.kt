@@ -5,10 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.github.mrbean355.android.viewmodel.data.dto.Pokemon
 import kotlinx.android.synthetic.main.fragment_view_pokemon.*
 
-class ViewPokemonFragment : Fragment(), ViewPokemonView {
+class ViewPokemonFragment : Fragment() {
     private lateinit var adapter: PokemonAdapter
     private lateinit var viewModel: ViewPokemonViewModel
 
@@ -22,12 +21,9 @@ class ViewPokemonFragment : Fragment(), ViewPokemonView {
         recycler_view.adapter = adapter
 
         viewModel = ViewPokemonViewModel()
-        viewModel.initialise(this)
-    }
-
-    override fun displayItems(items: List<Pokemon>) {
-        requireActivity().title = "${items.size} Pokemon"
-        progress_bar.visibility = View.GONE
-        adapter.setItems(items)
+        viewModel.initialise { items ->
+            progress_bar.visibility = View.GONE
+            adapter.setItems(items)
+        }
     }
 }
