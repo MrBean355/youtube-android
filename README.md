@@ -1,5 +1,7 @@
 # Android Demo Projects
 
+[![Build Status](https://travis-ci.org/MrBean355/youtube-android.svg?branch=master)](https://travis-ci.org/MrBean355/youtube-android)
+
 Source code as seen in my YouTube videos!
 
 Demo projects are split into separate folders within this repository, check them out!
