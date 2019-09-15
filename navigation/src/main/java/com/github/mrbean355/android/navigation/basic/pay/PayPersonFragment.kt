@@ -32,13 +32,13 @@ class PayPersonFragment : Fragment() {
         }
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?) {
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
-        inflater?.inflate(R.menu.next, menu)
+        inflater.inflate(R.menu.next, menu)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        if (item?.itemId == R.id.action_next) {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.action_next) {
             val directions = PayPersonFragmentDirections.actionPayPersonFragmentToPaymentCompleteFragment(
                     args.personName,
                     from_account_number.text.toString(),

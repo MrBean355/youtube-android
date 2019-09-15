@@ -30,13 +30,13 @@ class PaymentCompleteFragment : Fragment() {
         amount.text = args.amount
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?) {
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
-        inflater?.inflate(R.menu.done, menu)
+        inflater.inflate(R.menu.done, menu)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        if (item?.itemId == R.id.action_done) {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.action_done) {
             findNavController().navigate(R.id.action_paymentCompleteFragment_to_mainFragment)
             return true
         }
