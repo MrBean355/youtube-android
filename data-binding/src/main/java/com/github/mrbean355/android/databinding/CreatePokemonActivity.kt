@@ -6,6 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.github.mrbean355.android.databinding.databinding.ActivityCreatePokemonBinding
 
+/**
+ * Whoops! The original idea was to have an activity to create new Pokemon (hence the file naming).
+ * When making my video, I completely forgot about this!
+ * Oh well, the code principles stay the same :D
+ */
 class CreatePokemonActivity : AppCompatActivity() {
     private lateinit var viewModel: CreatePokemonViewModel
 
