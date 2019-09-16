@@ -1,6 +1,7 @@
 include ':app',
         ':framework',
         ':dagger-2',
+        ':data-binding',
         ':enhanced-adapter',
         ':navigation',
         ':room',

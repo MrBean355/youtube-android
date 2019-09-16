@@ -16,6 +16,13 @@
         android:text="@string/action_dagger_2" />
 
     <Button
+        android:id="@+id/action_data_binding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/action_data_binding" />
+
+    <Button
         android:id="@+id/action_enhanced_adapter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

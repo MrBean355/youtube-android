@@ -16,11 +16,18 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+    /**
+     * Needed in application modules which consume libraries that use data binding.
+     */
+    dataBinding {
+        enabled true
+    }
 }
 
 dependencies {
     implementation project(':framework')
     implementation project(':dagger-2')
+    implementation project(':data-binding')
     implementation project(':enhanced-adapter')
     implementation project(':navigation')
     implementation project(':room')

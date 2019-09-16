@@ -2,6 +2,7 @@
     <string name="app_name">YouTube Android</string>
 
     <string name="action_dagger_2">Dagger 2</string>
+    <string name="action_data_binding">Data Binding</string>
     <string name="action_enhanced_adapter">Enhanced Adapter</string>
     <string name="action_navigation">Navigation</string>
     <string name="action_room">Room</string>

@@ -1,0 +1,11 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.mrbean355.android.databinding">
+
+    <application>
+
+        <activity android:name=".CreatePokemonActivity" />
+
+    </application>
+
+</manifest>

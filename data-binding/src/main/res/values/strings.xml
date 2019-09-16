@@ -1,0 +1,6 @@
+<resources>
+    <string name="welcome">Welcome</string>
+    <string name="test_button">Click me</string>
+    <string name="test_button_clicked">Clicked!</string>
+    <string name="custom_view_prefix">Magic: %s</string>
+</resources>

@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.github.mrbean355.android.dagger2.ui.ViewHeroesActivity
+import com.github.mrbean355.android.databinding.CreatePokemonActivity
 import com.github.mrbean355.android.navigation.NavigationLandingActivity
 import com.github.mrbean355.android.room.ViewPokemonActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -16,6 +17,9 @@ class MainActivity : AppCompatActivity() {
 
         action_dagger_2.setOnClickListener {
             startActivity(Intent(this, ViewHeroesActivity::class.java))
+        }
+        action_data_binding.setOnClickListener {
+            startActivity(Intent(this, CreatePokemonActivity::class.java))
         }
         action_enhanced_adapter.setOnClickListener {
             startActivity(Intent(this, com.github.mrbean355.android.yt.enhancedadapter.ViewPokemonActivity::class.java))
