@@ -9,6 +9,11 @@ import com.github.mrbean355.android.framework.PokemonRepository
 import com.github.mrbean355.android.room.db.PokemonDatabase
 import com.github.mrbean355.android.room.db.PokemonEntity
 import kotlinx.android.synthetic.main.activity_view_pokemon.*
+import kotlinx.coroutines.Dispatchers.IO
+import kotlinx.coroutines.Dispatchers.Main
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 /**
  * NOTE: All this logic should be moved out of the activity!
@@ -27,17 +32,17 @@ class ViewPokemonActivity : AppCompatActivity() {
     }
 
     private fun loadPokemon() {
-        Thread {
+        GlobalScope.launch(context = IO) {
             var items = loadFromDatabase()
             if (items.isEmpty()) {
                 items = loadFromService()
                 saveToDatabase(items)
             }
-            runOnUiThread {
+            withContext(Main) {
                 adapter.setItems(items)
                 progress_bar.visibility = View.GONE
             }
-        }.start()
+        }
     }
 
     private fun loadFromDatabase(): List<Pokemon> {
@@ -52,7 +57,7 @@ class ViewPokemonActivity : AppCompatActivity() {
         dao.insertAll(items.map { PokemonEntity(0, it.name, it.url) })
     }
 
-    private fun loadFromService(): List<Pokemon> {
+    private suspend fun loadFromService(): List<Pokemon> {
         return PokemonRepository().getAll()
     }
 }
