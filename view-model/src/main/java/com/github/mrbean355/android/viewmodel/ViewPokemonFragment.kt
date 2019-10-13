@@ -5,12 +5,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.observe
 import com.github.mrbean355.android.framework.PokemonAdapter
 import kotlinx.android.synthetic.main.fragment_view_pokemon.*
 
 class ViewPokemonFragment : Fragment() {
     private lateinit var adapter: PokemonAdapter
-    private lateinit var viewModel: ViewPokemonViewModel
+    // If you don't use Kotlin, instantiate the view model in onViewCreated():
+    // viewModel = ViewModelProviders.of(this).get(ViewPokemonViewModel.class);
+    private val viewModel by viewModels<ViewPokemonViewModel>()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_view_pokemon, container, false)
@@ -21,10 +25,9 @@ class ViewPokemonFragment : Fragment() {
         adapter = PokemonAdapter()
         recycler_view.adapter = adapter
 
-        viewModel = ViewPokemonViewModel()
-        viewModel.initialise { items ->
+        viewModel.pokemon.observe(this) {
             progress_bar.visibility = View.GONE
-            adapter.setItems(items)
+            adapter.setItems(it)
         }
     }
 }

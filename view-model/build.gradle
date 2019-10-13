@@ -16,6 +16,14 @@ android {
 }
 
 dependencies {
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-common-java8:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0'
+
+    // Optional, if you use Kotlin:
+    implementation 'androidx.fragment:fragment-ktx:1.1.0'
+
     // Other dependencies (not relevant):
     implementation project(':framework')
 }
