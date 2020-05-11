@@ -21,6 +21,9 @@ dependencies {
     api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
     api "androidx.appcompat:appcompat:$appcompat_version"
     api "androidx.core:core-ktx:$core_version"
+    // Without the 'lifecycle-viewmodel' dependency, the IDE warns about not being
+    // able to find the 'HasDefaultViewModelProviderFactory' class.
+    api "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     api "androidx.recyclerview:recyclerview:$recyclerview_version"
     api "com.google.android.material:material:$material_version"
     api "com.squareup.retrofit2:retrofit:$retrofit_version"
