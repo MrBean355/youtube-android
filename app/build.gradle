@@ -19,8 +19,8 @@ android {
     /**
      * Needed in application modules which consume libraries that use data binding.
      */
-    dataBinding {
-        enabled true
+    buildFeatures {
+        dataBinding = true
     }
 }
 
