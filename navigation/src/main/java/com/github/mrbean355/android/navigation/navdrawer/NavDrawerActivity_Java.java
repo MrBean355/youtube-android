@@ -42,7 +42,7 @@ public class NavDrawerActivity_Java extends AppCompatActivity {
          * Share and Send items are nested, they won't be treated as top-level destinations.
          */
         appBarConfig = new AppBarConfiguration.Builder(topLevelDestinations)
-                .setDrawerLayout(drawerLayout)
+                .setOpenableLayout(drawerLayout)
                 .build();
 
         navController = Navigation.findNavController(this, R.id.nav_host_fragment);
