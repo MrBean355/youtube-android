@@ -7,15 +7,9 @@ import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 
 class PokemonRepository {
-    private val service = Retrofit.Builder()
-            .baseUrl("https://pokeapi.co/api/v2/")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-            .create(PokemonService::class.java)
+    private val service = PokemonService()
 
     /** Make a blocking service call to fetch all Pokemon. */
     suspend fun getAll(): List<Pokemon> {

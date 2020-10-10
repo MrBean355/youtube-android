@@ -26,6 +26,7 @@ android {
 
 dependencies {
     implementation project(':framework')
+    implementation project(':coroutines')
     implementation project(':dagger-2')
     implementation project(':data-binding')
     implementation project(':enhanced-adapter')

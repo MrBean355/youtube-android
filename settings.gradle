@@ -1,5 +1,6 @@
 include ':app',
         ':framework',
+        ':coroutines',
         ':dagger-2',
         ':data-binding',
         ':enhanced-adapter',
