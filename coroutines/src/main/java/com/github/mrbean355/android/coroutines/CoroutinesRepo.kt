@@ -6,6 +6,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlin.coroutines.CoroutineContext
 
+// Also see the unit tests for this class.
 class CoroutinesRepo @VisibleForTesting internal constructor(
         private val dispatcher: CoroutineContext,
         private val pokemonService: PokemonService
@@ -18,7 +19,7 @@ class CoroutinesRepo @VisibleForTesting internal constructor(
     // while the function executes.
     // Once it finishes, it will switch back to the previous dispatcher (main in this case).
     suspend fun fetchData(): List<String> = withContext(dispatcher) {
-        pokemonService.getAll().execute().body()?.results.orEmpty()
+        pokemonService.getAll().body()?.results.orEmpty()
                 .take(10)
                 .map { it.name }
     }

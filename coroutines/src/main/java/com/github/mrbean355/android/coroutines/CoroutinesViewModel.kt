@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 
+// Also see the unit tests for this class.
 class CoroutinesViewModel @VisibleForTesting internal constructor(
         private val repo: CoroutinesRepo
 ) : ViewModel() {

@@ -14,7 +14,7 @@ class PokemonRepository {
     /** Make a blocking service call to fetch all Pokemon. */
     suspend fun getAll(): List<Pokemon> {
         delay(1000) // emulate a long service call.
-        val response = service.getAll().execute()
+        val response = service.getAll()
         val body = response.body()
         if (response.isSuccessful && body != null) {
             return body.results

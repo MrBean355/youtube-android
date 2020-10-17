@@ -57,7 +57,7 @@ class CoroutinesViewModelTest {
     }
 
     @Test
-    fun testOnCreate_UpdatesLiveData() = runBlockingTest {
+    fun testOnCreate_UpdatesLiveData() {
         viewModel.onCreate()
 
         assertEquals("1, 2, 3", viewModel.result.value)

@@ -1,6 +1,6 @@
 package com.github.mrbean355.android.framework
 
-import retrofit2.Call
+import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
@@ -8,7 +8,7 @@ import retrofit2.http.GET
 interface PokemonService {
 
     @GET("pokemon?limit=1000")
-    fun getAll(): Call<PokemonResponse>
+    suspend fun getAll(): Response<PokemonResponse>
 
 }
 
