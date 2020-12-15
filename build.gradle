@@ -7,15 +7,15 @@ buildscript {
         fragment_version = '1.2.5'
         lifecycle_version = '2.2.0'
         material_version = '1.2.1'
-        navigation_version = '2.3.1'
+        navigation_version = '2.3.2'
         recyclerview_version = '1.1.0'
         room_version = '2.2.5'
 
         // Third-party
-        dagger_version = '2.29.1'
+        dagger_version = '2.30.1'
         enhanced_adapter_version = '1.0.0'
-        kotlin_version = '1.4.10'
-        coroutines_version = '1.4.1'
+        kotlin_version = '1.4.21'
+        coroutines_version = '1.4.2'
         retrofit_version = '2.9.0'
 
         // SDKs
@@ -28,7 +28,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.0'
+        classpath 'com.android.tools.build:gradle:4.1.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         /* BEGIN: section for Navigation component */
