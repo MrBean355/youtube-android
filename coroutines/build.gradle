@@ -18,8 +18,7 @@ android {
 }
 
 dependencies {
-    // Main dependencies:
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+    // Main dependency:
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
 
     // Test helpers:
@@ -28,7 +27,7 @@ dependencies {
 
     // Other dependencies (not relevant):
     implementation project(':framework')
-    implementation 'androidx.activity:activity-ktx:1.1.0'
+    implementation "androidx.activity:activity-ktx:$activity_version"
 
     testImplementation 'junit:junit:4.13.1'
     testImplementation 'org.mockito:mockito-inline:2.28.2'

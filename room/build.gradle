@@ -8,6 +8,11 @@ android {
     defaultConfig {
         minSdkVersion min_sdk
         targetSdkVersion target_sdk
+        kapt {
+            arguments {
+                arg("room.schemaLocation", "$projectDir/schemas")
+            }
+        }
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
