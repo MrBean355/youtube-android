@@ -1,5 +1,6 @@
 include ':app',
         ':framework',
+        ':activity-contracts',
         ':coroutines',
         ':dagger-2',
         ':data-binding',

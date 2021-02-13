@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">YouTube Android</string>
 
+    <string name="action_activity_contracts">Activity Contracts</string>
     <string name="action_coroutines">Coroutines</string>
     <string name="action_dagger_2">Dagger 2</string>
     <string name="action_data_binding">Data Binding</string>

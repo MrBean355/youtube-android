@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_result_pending">Waiting for result…</string>
+    <string name="permission_result_granted">Permission granted!</string>
+    <string name="permission_result_denied">Permission denied :(</string>
+    <string name="custom_contract_result">Success: %b, message: %s</string>
+
+    <string name="btn_permission">Permissions</string>
+    <string name="btn_custom">Custom contracts</string>
+    <string name="btn_success">Success</string>
+    <string name="btn_error">Error</string>
+</resources>
