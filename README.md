@@ -8,6 +8,7 @@ Demo projects are split into separate folders within this repository, check them
 
 If you want to open the code in Android Studio, you'll need to open the root folder.
 
+- [Activity contracts](activity-contracts/README.md): simplified handling of `Activity` results
 - [Coroutine basics](coroutines/README.md): Kotlin coroutine basics on Android
 - [Dagger 2](dagger-2/README.md): dependency injection
 - [Data binding](data-binding/README.md): crash course on the data binding library

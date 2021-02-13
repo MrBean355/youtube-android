@@ -3,6 +3,7 @@ package com.github.mrbean355.android.activitycontracts
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import androidx.activity.result.contract.ActivityResultContract
 import androidx.appcompat.app.AppCompatActivity
 import com.github.mrbean355.android.activitycontracts.databinding.ActivityPaymentBinding
 
@@ -30,16 +31,16 @@ class PaymentActivity : AppCompatActivity() {
         }
     }
 
-    companion object {
+    class Contract : ActivityResultContract<Payment, TransactionResult>() {
 
-        fun createIntent(context: Context, payment: Payment): Intent =
+        override fun createIntent(context: Context, input: Payment?): Intent =
             Intent(context, PaymentActivity::class.java)
-                .putExtra(KEY_NAME, payment.recipientName)
-                .putExtra(KEY_AMOUNT, payment.amount)
+                .putExtra(KEY_NAME, input?.recipientName)
+                .putExtra(KEY_AMOUNT, input?.amount)
 
-        fun parseResult(resultCode: Int, data: Intent?): TransactionResult = TransactionResult(
+        override fun parseResult(resultCode: Int, intent: Intent?) = TransactionResult(
             success = resultCode == RESULT_OK,
-            message = data?.getStringExtra(KEY_RESULT).orEmpty()
+            message = intent?.getStringExtra(KEY_RESULT).orEmpty()
         )
     }
 }
