@@ -1,6 +1,6 @@
 # Activity Contracts
 
-🎞️ [YouTube video](https://youtu.be/)
+🎞️ [YouTube video](https://youtu.be/7Fc79qTq7yc)
 📓 [Official documentation](https://developer.android.com/training/basics/intents/result)
 
 ## Brief Explanation
