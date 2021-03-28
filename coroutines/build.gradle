@@ -29,8 +29,8 @@ dependencies {
     implementation project(':framework')
     implementation "androidx.activity:activity-ktx:$activity_version"
 
-    testImplementation 'junit:junit:4.13.1'
+    testImplementation 'junit:junit:4.13.2'
     testImplementation 'org.mockito:mockito-inline:2.28.2'
     testImplementation 'com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0'
-    testImplementation "org.robolectric:robolectric:4.4"
+    testImplementation "org.robolectric:robolectric:4.5.1"
 }
