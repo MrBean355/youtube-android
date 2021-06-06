@@ -26,7 +26,7 @@ class DemoChoicesAdapter(
         val context = holder.itemView.context
         holder.textView.text = context.getString(CHOICES[position].first)
         holder.itemView.setOnClickListener {
-            itemClicked(CHOICES[holder.adapterPosition].second)
+            itemClicked(CHOICES[holder.bindingAdapterPosition].second)
         }
     }
 

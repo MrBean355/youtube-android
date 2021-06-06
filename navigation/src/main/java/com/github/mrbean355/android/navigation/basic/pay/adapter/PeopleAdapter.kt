@@ -26,7 +26,7 @@ class PeopleAdapter : RecyclerView.Adapter<PeopleAdapter.ViewHolder>() {
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.textView.text = items[position]
         holder.itemView.setOnClickListener {
-            onItemClicked(items[holder.adapterPosition])
+            onItemClicked(items[holder.bindingAdapterPosition])
         }
     }
 

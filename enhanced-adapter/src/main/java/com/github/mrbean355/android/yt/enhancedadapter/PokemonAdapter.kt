@@ -23,7 +23,7 @@ class PokemonAdapter : EnhancedAdapter<Pokemon, PokemonAdapter.ViewHolder>(Pokem
         holder.url.text = itemAt.url
         holder.itemView.setBackgroundColor(ContextCompat.getColor(holder.itemView.context, if (isItemSelected(position)) R.color.colorAccent else android.R.color.transparent))
         holder.itemView.setOnClickListener {
-            onItemClicked(holder.adapterPosition)
+            onItemClicked(holder.bindingAdapterPosition)
         }
     }
 
