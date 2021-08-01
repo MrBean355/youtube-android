@@ -3,6 +3,7 @@ package com.github.mrbean355.android.room
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import com.github.mrbean355.android.framework.Pokemon
 import com.github.mrbean355.android.framework.PokemonAdapter
 import com.github.mrbean355.android.framework.PokemonRepository
@@ -11,7 +12,6 @@ import com.github.mrbean355.android.room.db.PokemonEntity
 import kotlinx.android.synthetic.main.activity_view_pokemon.*
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.Dispatchers.Main
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
@@ -32,7 +32,7 @@ class ViewPokemonActivity : AppCompatActivity() {
     }
 
     private fun loadPokemon() {
-        GlobalScope.launch(context = IO) {
+        lifecycleScope.launch(context = IO) {
             var items = loadFromDatabase()
             if (items.isEmpty()) {
                 items = loadFromService()

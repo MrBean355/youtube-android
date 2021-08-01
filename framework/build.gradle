@@ -18,6 +18,7 @@ android {
 dependencies {
     api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+    api "androidx.activity:activity-ktx:$activity_version"
     api "androidx.appcompat:appcompat:$appcompat_version"
     api "androidx.core:core-ktx:$core_version"
     // Without the 'lifecycle-viewmodel' dependency, the IDE warns about not being
