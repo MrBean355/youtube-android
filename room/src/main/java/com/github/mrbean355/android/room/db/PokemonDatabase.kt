@@ -29,8 +29,8 @@ abstract class PokemonDatabase : RoomDatabase() {
                     i2
                 } else {
                     val created = Room.databaseBuilder(application, PokemonDatabase::class.java, "pokemon")
-                            .fallbackToDestructiveMigration()
-                            .build()
+                        .fallbackToDestructiveMigration()
+                        .build()
                     instance = created
                     created
                 }

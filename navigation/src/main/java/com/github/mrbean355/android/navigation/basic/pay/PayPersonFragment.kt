@@ -1,7 +1,12 @@
 package com.github.mrbean355.android.navigation.basic.pay
 
 import android.os.Bundle
-import android.view.*
+import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
+import android.view.View
+import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
@@ -40,9 +45,9 @@ class PayPersonFragment : Fragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.action_next) {
             val directions = PayPersonFragmentDirections.actionPayPersonFragmentToPaymentCompleteFragment(
-                    args.personName,
-                    from_account_number.text.toString(),
-                    amount.text.toString()
+                args.personName,
+                from_account_number.text.toString(),
+                amount.text.toString()
             )
             findNavController().navigate(directions)
             return true

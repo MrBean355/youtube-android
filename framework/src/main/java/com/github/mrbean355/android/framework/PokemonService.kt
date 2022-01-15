@@ -15,13 +15,13 @@ interface PokemonService {
 @Suppress("FunctionName") // Fake constructor.
 fun PokemonService(): PokemonService {
     return Retrofit.Builder()
-            .baseUrl("https://pokeapi.co/api/v2/")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-            .create(PokemonService::class.java)
+        .baseUrl("https://pokeapi.co/api/v2/")
+        .addConverterFactory(GsonConverterFactory.create())
+        .build()
+        .create(PokemonService::class.java)
 }
 
 data class PokemonResponse(
-        val count: Int,
-        val results: List<Pokemon>
+    val count: Int,
+    val results: List<Pokemon>
 )

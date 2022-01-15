@@ -10,8 +10,8 @@ class ViewPokemonActivity : AppCompatActivity() {
         setContentView(R.layout.vm_activity_view_pokemon)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                    .add(R.id.fragment_container, ViewPokemonFragment())
-                    .commit()
+                .add(R.id.fragment_container, ViewPokemonFragment())
+                .commit()
         }
     }
 }

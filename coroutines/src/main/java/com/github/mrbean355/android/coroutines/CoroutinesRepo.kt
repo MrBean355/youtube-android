@@ -8,8 +8,8 @@ import kotlin.coroutines.CoroutineContext
 
 // Also see the unit tests for this class.
 class CoroutinesRepo @VisibleForTesting internal constructor(
-        private val dispatcher: CoroutineContext,
-        private val pokemonService: PokemonService
+    private val dispatcher: CoroutineContext,
+    private val pokemonService: PokemonService
 ) {
 
     constructor() : this(Dispatchers.IO, PokemonService())
@@ -20,7 +20,7 @@ class CoroutinesRepo @VisibleForTesting internal constructor(
     // Once it finishes, it will switch back to the previous dispatcher (main in this case).
     suspend fun fetchData(): List<String> = withContext(dispatcher) {
         pokemonService.getAll().body()?.results.orEmpty()
-                .take(10)
-                .map { it.name }
+            .take(10)
+            .map { it.name }
     }
 }

@@ -9,7 +9,7 @@ import kotlinx.coroutines.launch
 
 // Also see the unit tests for this class.
 class CoroutinesViewModel @VisibleForTesting internal constructor(
-        private val repo: CoroutinesRepo
+    private val repo: CoroutinesRepo
 ) : ViewModel() {
 
     private val _loading = MutableLiveData<Boolean>()
