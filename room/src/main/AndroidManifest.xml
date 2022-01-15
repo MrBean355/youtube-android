@@ -6,7 +6,9 @@
 
     <application>
 
-        <activity android:name=".ViewPokemonActivity" />
+        <activity
+            android:name=".ViewPokemonActivity"
+            android:exported="false" />
 
     </application>
 

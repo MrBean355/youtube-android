@@ -3,7 +3,9 @@
     package="com.github.mrbean355.android.coroutines">
 
     <application>
-        <activity android:name=".CoroutinesActivity" />
+        <activity
+            android:name=".CoroutinesActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

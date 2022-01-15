@@ -4,7 +4,9 @@
 
     <application>
 
-        <activity android:name=".CreatePokemonActivity" />
+        <activity
+            android:name=".CreatePokemonActivity"
+            android:exported="false" />
 
     </application>
 

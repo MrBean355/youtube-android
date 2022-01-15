@@ -33,10 +33,10 @@ class PaymentActivity : AppCompatActivity() {
 
     class Contract : ActivityResultContract<Payment, TransactionResult>() {
 
-        override fun createIntent(context: Context, input: Payment?): Intent =
+        override fun createIntent(context: Context, input: Payment): Intent =
             Intent(context, PaymentActivity::class.java)
-                .putExtra(KEY_NAME, input?.recipientName)
-                .putExtra(KEY_AMOUNT, input?.amount)
+                .putExtra(KEY_NAME, input.recipientName)
+                .putExtra(KEY_AMOUNT, input.amount)
 
         override fun parseResult(resultCode: Int, intent: Intent?) = TransactionResult(
             success = resultCode == RESULT_OK,

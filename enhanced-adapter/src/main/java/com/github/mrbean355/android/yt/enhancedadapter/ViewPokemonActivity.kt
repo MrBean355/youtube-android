@@ -24,9 +24,9 @@ class ViewPokemonActivity : AppCompatActivity() {
         }
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.view_pokemon, menu)
-        val searchView = menu?.findItem(R.id.action_search)?.actionView as SearchView?
+        val searchView = menu.findItem(R.id.action_search)?.actionView as SearchView?
         searchView?.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
 
             override fun onQueryTextSubmit(query: String?): Boolean {

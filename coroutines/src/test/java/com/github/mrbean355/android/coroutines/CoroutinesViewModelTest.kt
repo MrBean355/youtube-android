@@ -5,7 +5,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.test.resetMain
-import kotlinx.coroutines.test.runBlockingTest
+import kotlinx.coroutines.test.runTest
 import kotlinx.coroutines.test.setMain
 import org.junit.After
 import org.junit.Assert.assertEquals
@@ -15,7 +15,8 @@ import org.junit.Test
 import org.mockito.Mock
 import org.mockito.Mockito.`when`
 import org.mockito.Mockito.verify
-import org.mockito.MockitoAnnotations.initMocks
+import org.mockito.junit.MockitoJUnit
+import org.mockito.junit.MockitoRule
 
 @ExperimentalCoroutinesApi
 class CoroutinesViewModelTest {
@@ -24,11 +25,15 @@ class CoroutinesViewModelTest {
     private lateinit var viewModel: CoroutinesViewModel
 
     @get:Rule
-    val rule = InstantTaskExecutorRule()
+    val instantTaskExecutorRule = InstantTaskExecutorRule()
+
+    @get:Rule
+    val mockitoRule: MockitoRule = MockitoJUnit.rule()
 
     @Before
     fun setUp() {
-        initMocks(this)
+        // This function has been deprecated; see the 'mockitoRule' property above.
+        // initMocks(this)
 
         // When running tests without Robolectric, no main dispatcher is loaded.
         // We can set the main dispatcher to a test one.
@@ -36,7 +41,8 @@ class CoroutinesViewModelTest {
         Dispatchers.setMain(Dispatchers.Unconfined)
 
         // Since 'fetchData()' is a suspend function, it needs to be called from a coroutine.
-        // In tests, we can use 'runBlocking { }' or 'runBlockingTest { }'.
+        // In tests, we can use 'runBlocking { }' or 'runTest { }'.
+        // 'runBlockingTest { }' was deprecated in Coroutines 1.6.0.
         runBlocking {
             `when`(mockRepo.fetchData()).thenReturn(listOf("1", "2", "3"))
         }
@@ -50,7 +56,7 @@ class CoroutinesViewModelTest {
     }
 
     @Test
-    fun testOnCreate_FetchesData() = runBlockingTest {
+    fun testOnCreate_FetchesData() = runTest {
         viewModel.onCreate()
 
         verify(mockRepo).fetchData()

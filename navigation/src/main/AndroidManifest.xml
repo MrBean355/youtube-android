@@ -4,18 +4,26 @@
 
     <application>
 
-        <activity android:name=".NavigationLandingActivity" />
+        <activity
+            android:name=".NavigationLandingActivity"
+            android:exported="false" />
 
-        <activity android:name=".basic.BasicNavigationActivity" />
+        <activity
+            android:name=".basic.BasicNavigationActivity"
+            android:exported="false" />
 
-        <activity android:name=".bottomnav.BottomNavActivity" />
+        <activity
+            android:name=".bottomnav.BottomNavActivity"
+            android:exported="false" />
 
         <activity
             android:name=".navdrawer.NavDrawerActivity"
+            android:exported="false"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
             android:name=".navdrawer.NavDrawerActivity_Java"
+            android:exported="false"
             android:theme="@style/AppTheme.NoActionBar" />
 
     </application>

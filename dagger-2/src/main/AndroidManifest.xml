@@ -6,7 +6,9 @@
 
     <application android:name=".HeroesApplication">
 
-        <activity android:name=".ui.ViewHeroesActivity" />
+        <activity
+            android:name=".ui.ViewHeroesActivity"
+            android:exported="false" />
 
     </application>
 
