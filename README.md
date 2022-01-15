@@ -7,6 +7,7 @@
 Demo projects are split into separate folders within this repository, check them out!
 
 If you want to open the code in Android Studio, you'll need to open the root folder.
+Note that you will need to build with JDK 11, which comes bundled with Android Studio.
 
 - [Activity contracts](activity-contracts/README.md): simplified handling of `Activity` results
 - [Coroutine basics](coroutines/README.md): Kotlin coroutine basics on Android
