@@ -23,14 +23,14 @@ dependencies {
 
     // Test helpers:
     testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_version"
-    testImplementation 'androidx.arch.core:core-testing:2.1.0'
+    testImplementation "androidx.arch.core:core-testing:$core_testing_version"
 
     // Other dependencies (not relevant):
     implementation project(':framework')
     implementation "androidx.activity:activity-ktx:$activity_version"
 
-    testImplementation 'junit:junit:4.13.2'
-    testImplementation 'org.mockito:mockito-inline:4.2.0'
-    testImplementation 'org.mockito.kotlin:mockito-kotlin:4.0.0'
-    testImplementation 'org.robolectric:robolectric:4.7.3'
+    testImplementation "junit:junit:$junit_version"
+    testImplementation "org.mockito:mockito-inline:$mockito_inline_version"
+    testImplementation "org.mockito.kotlin:mockito-kotlin:$mockito_kotlin_version"
+    testImplementation "org.robolectric:robolectric:$robolectric_version"
 }
