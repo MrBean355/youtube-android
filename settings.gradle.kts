@@ -11,5 +11,6 @@ include(
     ":navigation",
     ":options-menu-provider",
     ":room",
+    ":startup",
     ":view-model",
 )

@@ -40,5 +40,6 @@ dependencies {
     implementation(project(":navigation"))
     implementation(project(":options-menu-provider"))
     implementation(project(":room"))
+    implementation(project(":startup"))
     implementation(project(":view-model"))
 }

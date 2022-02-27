@@ -10,6 +10,7 @@
     <string name="action_navigation">Navigation</string>
     <string name="action_options_menu_provider">Options Menu Provider</string>
     <string name="action_room">Room</string>
+    <string name="action_startup">Startup</string>
     <string name="action_view_model">View Model</string>
     <string name="chevron_content_desc">Chevron icon</string>
 

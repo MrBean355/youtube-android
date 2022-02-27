@@ -31,6 +31,7 @@ import com.github.mrbean355.android.databinding.CreatePokemonActivity
 import com.github.mrbean355.android.menuprovider.MenuDemoActivity
 import com.github.mrbean355.android.navigation.NavigationLandingActivity
 import com.github.mrbean355.android.room.ViewPokemonActivity
+import com.github.mrbean355.android.startup.AppStartupActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -67,6 +68,7 @@ private val DemoItems = listOf(
     R.string.action_navigation to NavigationLandingActivity::class.java,
     R.string.action_options_menu_provider to MenuDemoActivity::class.java,
     R.string.action_room to ViewPokemonActivity::class.java,
+    R.string.action_startup to AppStartupActivity::class.java,
     R.string.action_view_model to com.github.mrbean355.android.viewmodel.ViewPokemonActivity::class.java
 )
 
