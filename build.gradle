@@ -10,10 +10,10 @@ buildscript {
         material_version = '1.5.0'
         navigation_version = '2.4.1'
         recyclerview_version = '1.2.1'
-        room_version = '2.4.1'
+        room_version = '2.4.2'
 
         // Third-party
-        dagger_version = '2.40.5'
+        dagger_version = '2.41'
         enhanced_adapter_version = '1.1.0'
         kotlin_version = '1.6.10'
         coroutines_version = '1.6.0'
@@ -36,7 +36,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.1.1'
+        classpath 'com.android.tools.build:gradle:7.1.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         /* BEGIN: section for Navigation component */
