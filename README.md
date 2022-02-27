@@ -4,6 +4,8 @@
 
 🐦 You can also find me on [Twitter](https://twitter.com/MikeDotKT)!
 
+🔴 I occasionally stream on [Twitch](https://www.twitch.tv/mr_bean355)!
+
 Demo projects are split into separate folders within this repository, check them out!
 
 If you want to open the code in Android Studio, you'll need to open the root folder.
