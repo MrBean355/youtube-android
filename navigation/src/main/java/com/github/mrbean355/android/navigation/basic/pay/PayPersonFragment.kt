@@ -7,17 +7,20 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.github.mrbean355.android.navigation.R
-import kotlinx.android.synthetic.main.fragment_pay_person.*
 
 /**
  * See the project README for the equivalent Java code.
  */
 class PayPersonFragment : Fragment() {
     private val args: PayPersonFragmentArgs by navArgs()
+    private lateinit var fromAccountNumber: TextView
+    private lateinit var amount: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,9 +33,12 @@ class PayPersonFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        person_name.text = args.personName
 
-        disclaimer_button.setOnClickListener {
+        fromAccountNumber = view.findViewById(R.id.from_account_number)
+        amount = view.findViewById(R.id.amount)
+
+        view.findViewById<TextView>(R.id.person_name).text = args.personName
+        view.findViewById<Button>(R.id.disclaimer_button).setOnClickListener {
             findNavController().navigate(R.id.action_payPersonFragment_to_viewDisclaimerFragment)
         }
     }
@@ -46,7 +52,7 @@ class PayPersonFragment : Fragment() {
         if (item.itemId == R.id.action_next) {
             val directions = PayPersonFragmentDirections.actionPayPersonFragmentToPaymentCompleteFragment(
                 args.personName,
-                from_account_number.text.toString(),
+                fromAccountNumber.text.toString(),
                 amount.text.toString()
             )
             findNavController().navigate(directions)

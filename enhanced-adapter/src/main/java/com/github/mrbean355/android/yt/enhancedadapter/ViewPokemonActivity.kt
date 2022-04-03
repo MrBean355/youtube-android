@@ -3,10 +3,11 @@ package com.github.mrbean355.android.yt.enhancedadapter
 import android.os.Bundle
 import android.view.Menu
 import android.view.View
+import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
+import androidx.recyclerview.widget.RecyclerView
 import com.github.mrbean355.android.framework.PokemonRepository
-import kotlinx.android.synthetic.main.activity_view_pokemon.*
 
 class ViewPokemonActivity : AppCompatActivity() {
     private lateinit var adapter: PokemonAdapter
@@ -15,11 +16,12 @@ class ViewPokemonActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_pokemon)
 
+        val progressBar = findViewById<ProgressBar>(R.id.progress_bar)
         adapter = PokemonAdapter()
-        recycler_view.adapter = adapter
+        findViewById<RecyclerView>(R.id.recycler_view).adapter = adapter
 
         PokemonRepository().getAllAsLiveData().observe(this) {
-            progress_bar.visibility = View.GONE
+            progressBar.visibility = View.GONE
             adapter.setItems(it)
         }
     }

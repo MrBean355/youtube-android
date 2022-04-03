@@ -2,14 +2,15 @@ package com.github.mrbean355.android.room
 
 import android.os.Bundle
 import android.view.View
+import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.RecyclerView
 import com.github.mrbean355.android.framework.Pokemon
 import com.github.mrbean355.android.framework.PokemonAdapter
 import com.github.mrbean355.android.framework.PokemonRepository
 import com.github.mrbean355.android.room.db.PokemonDatabase
 import com.github.mrbean355.android.room.db.PokemonEntity
-import kotlinx.android.synthetic.main.activity_view_pokemon.*
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.Dispatchers.Main
 import kotlinx.coroutines.launch
@@ -21,13 +22,15 @@ import kotlinx.coroutines.withContext
  */
 class ViewPokemonActivity : AppCompatActivity() {
     private lateinit var adapter: PokemonAdapter
+    private lateinit var progressBar: ProgressBar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_pokemon)
+        progressBar = findViewById(R.id.progress_bar)
 
         adapter = PokemonAdapter()
-        recycler_view.adapter = adapter
+        findViewById<RecyclerView>(R.id.recycler_view).adapter = adapter
         loadPokemon()
     }
 
@@ -40,7 +43,7 @@ class ViewPokemonActivity : AppCompatActivity() {
             }
             withContext(Main) {
                 adapter.setItems(items)
-                progress_bar.visibility = View.GONE
+                progressBar.visibility = View.GONE
             }
         }
     }

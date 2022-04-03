@@ -6,9 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.RecyclerView
 import com.github.mrbean355.android.navigation.R
 import com.github.mrbean355.android.navigation.basic.pay.adapter.PeopleAdapter
-import kotlinx.android.synthetic.main.fragment_view_people.*
 
 /**
  * See the project README for the equivalent Java code.
@@ -27,7 +27,7 @@ class ViewPeopleFragment : Fragment() {
             val directions = ViewPeopleFragmentDirections.actionViewPeopleFragmentToPayPersonFragment(name)
             findNavController().navigate(directions)
         }
-        people_recycler_view.adapter = adapter
+        view.findViewById<RecyclerView>(R.id.people_recycler_view).adapter = adapter
     }
 
     private companion object {

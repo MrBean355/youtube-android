@@ -4,10 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.github.mrbean355.android.navigation.R
-import kotlinx.android.synthetic.main.fragment_main.*
 
 /**
  * See the project README for the equivalent Java code.
@@ -20,10 +20,10 @@ class MainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view_balances_button.setOnClickListener {
+        view.findViewById<Button>(R.id.view_balances_button).setOnClickListener {
             findNavController().navigate(R.id.action_mainFragment_to_viewBalancesFragment)
         }
-        pay_someone_button.setOnClickListener {
+        view.findViewById<Button>(R.id.pay_someone_button).setOnClickListener {
             findNavController().navigate(R.id.action_mainFragment_to_viewPeopleFragment)
         }
     }

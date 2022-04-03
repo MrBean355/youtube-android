@@ -7,11 +7,11 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.github.mrbean355.android.navigation.R
-import kotlinx.android.synthetic.main.fragment_payment_complete.*
 
 /**
  * See the project README for the equivalent Java code.
@@ -30,9 +30,9 @@ class PaymentCompleteFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        person_name.text = args.personName
-        from_account_number.text = args.accountNumber
-        amount.text = args.amount
+        view.findViewById<TextView>(R.id.person_name).text = args.personName
+        view.findViewById<TextView>(R.id.from_account_number).text = args.accountNumber
+        view.findViewById<TextView>(R.id.amount).text = args.amount
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
