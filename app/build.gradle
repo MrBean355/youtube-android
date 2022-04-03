@@ -18,11 +18,13 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-    /**
-     * Needed in application modules which consume libraries that use data binding.
-     */
     buildFeatures {
-        dataBinding = true
+        // To prevent a crash, we need to enable data binding in app modules which consume library modules that use data binding.
+        dataBinding true
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion compose_version
     }
 }
 
