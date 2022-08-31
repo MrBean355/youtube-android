@@ -10,9 +10,9 @@ class PeopleAdapter : RecyclerView.Adapter<PeopleAdapter.ViewHolder>() {
     private var onItemClicked: (person: String) -> Unit = {}
 
     fun setItems(items: List<String>) {
-        this.items = items.sortedWith(Comparator { o1, o2 ->
+        this.items = items.sortedWith { o1, o2 ->
             o1.compareTo(o2)
-        })
+        }
     }
 
     fun setOnItemClickedListener(onItemClicked: (person: String) -> Unit) {
