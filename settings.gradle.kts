@@ -1,10 +1,12 @@
-include ':app',
-        ':framework',
-        ':activity-contracts',
-        ':coroutines',
-        ':dagger-2',
-        ':data-binding',
-        ':enhanced-adapter',
-        ':navigation',
-        ':room',
-        ':view-model'
+include(
+    ":app",
+    ":framework",
+    ":activity-contracts",
+    ":coroutines",
+    ":dagger-2",
+    ":data-binding",
+    ":enhanced-adapter",
+    ":navigation",
+    ":room",
+    ":view-model",
+)
