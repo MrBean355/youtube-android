@@ -3,6 +3,8 @@ package com.github.mrbean355.android
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.activity.compose.setContent
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
@@ -38,6 +40,20 @@ class MainActivity : AppCompatActivity() {
                 DemoScreen()
             }
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        super.onCreateOptionsMenu(menu)
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.action_about_app) {
+            startActivity(Intent(this, AboutAppActivity::class.java))
+            return true
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
 

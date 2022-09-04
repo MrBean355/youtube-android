@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">YouTube Android</string>
 
+    <string name="action_about_app">About app</string>
     <string name="action_activity_contracts">Activity Contracts</string>
     <string name="action_coroutines">Coroutines</string>
     <string name="action_dagger_2">Dagger 2</string>
@@ -10,4 +11,11 @@
     <string name="action_room">Room</string>
     <string name="action_view_model">View Model</string>
     <string name="chevron_content_desc">Chevron icon</string>
+
+    <string name="about_app_title">Hello!</string>
+    <string name="about_app_subtitle">This app is built with sample code that accompanies my Android YouTube videos</string>
+    <string name="about_app_author">App by Mike Johnston</string>
+    <string name="about_app_info_links">🔗 You can find all of the applicable links in the project\'s README file.</string>
+    <string name="about_app_info_github">❤️ Consider sponsoring me on GitHub if you appreciate my work.</string>
+    <string name="about_app_android_logo">Android logo</string>
 </resources>
