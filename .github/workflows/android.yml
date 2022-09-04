@@ -18,7 +18,7 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           gradle-version: wrapper
-          cache-read-only: ${{ github.ref != 'refs/heads/master' }}
+          cache-read-only: ${{ github.ref != 'refs/heads/main' }}
 
       - name: Build
         run: ./gradlew clean assembleDebug
