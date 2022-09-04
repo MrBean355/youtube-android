@@ -29,9 +29,9 @@ buildscript {
         set("core_testing_version", "2.1.0")
 
         // SDKs
-        set("compile_sdk", 32)
+        set("compile_sdk", 33)
         set("min_sdk", 21)
-        set("target_sdk", 32)
+        set("target_sdk", 33)
     }
     repositories {
         google()
