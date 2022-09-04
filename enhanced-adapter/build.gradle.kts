@@ -21,6 +21,7 @@ android {
 dependencies {
     val enhanced_adapter_version: String by rootProject.extra
 
+    // Main dependency:
     implementation("com.github.mrbean355:enhanced-adapter:$enhanced_adapter_version")
 
     // Other dependencies (not relevant):

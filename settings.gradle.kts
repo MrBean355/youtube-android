@@ -1,3 +1,5 @@
+rootProject.name = "youtube-android"
+
 include(
     ":app",
     ":framework",

@@ -27,9 +27,12 @@ android {
 dependencies {
     val room_version: String by rootProject.extra
 
+    // Main dependencies:
     implementation("androidx.room:room-runtime:$room_version")
-    // For Java use 'annotationProcessor' instead of 'kapt':
+    // Projects WITH Kotlin support:
     kapt("androidx.room:room-compiler:$room_version")
+    // Projects WITHOUT Kotlin support:
+    // annotationProcessor("androidx.room:room-compiler:$room_version")
 
     // optional - Kotlin Extensions and Coroutines support for Room:
     // implementation("androidx.room:room-ktx:$room_version")

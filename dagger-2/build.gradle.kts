@@ -22,6 +22,7 @@ android {
 dependencies {
     val dagger_version: String by rootProject.extra
 
+    // Main dependencies:
     implementation("com.google.dagger:dagger:$dagger_version")
     implementation("com.google.dagger:dagger-android:$dagger_version")
     implementation("com.google.dagger:dagger-android-support:$dagger_version")

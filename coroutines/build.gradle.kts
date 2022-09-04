@@ -34,12 +34,12 @@ dependencies {
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_version")
     testImplementation("androidx.arch.core:core-testing:$core_testing_version")
 
-    // Other dependencies (not relevant):
-    implementation(project(":framework"))
-    implementation("androidx.activity:activity-ktx:$activity_version")
-
+    // Test frameworks:
     testImplementation("junit:junit:$junit_version")
     testImplementation("org.mockito:mockito-inline:$mockito_inline_version")
     testImplementation("org.mockito.kotlin:mockito-kotlin:$mockito_kotlin_version")
     testImplementation("org.robolectric:robolectric:$robolectric_version")
+
+    // Other dependencies (not relevant):
+    implementation(project(":framework"))
 }

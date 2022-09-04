@@ -22,6 +22,7 @@ dependencies {
     val lifecycle_version: String by rootProject.extra
     val fragment_version: String by rootProject.extra
 
+    // Main dependencies:
     implementation("androidx.lifecycle:lifecycle-common-java8:$lifecycle_version")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")

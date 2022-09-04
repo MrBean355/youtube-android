@@ -2,9 +2,9 @@ plugins {
     id("com.android.library")
     kotlin("android")
 
-    // With Kotlin:
+    // Projects WITH Kotlin support:
     id("androidx.navigation.safeargs.kotlin")
-    // Without Kotlin:
+    // Projects WITHOUT Kotlin support:
     // id("androidx.navigation.safeargs")
 }
 
@@ -26,21 +26,15 @@ android {
 dependencies {
     val navigation_version: String by rootProject.extra
 
-    // AndroidX with Kotlin:
+    // Main dependencies:
+
+    // Projects WITH Kotlin support:
     implementation("androidx.navigation:navigation-fragment-ktx:$navigation_version")
     implementation("androidx.navigation:navigation-ui-ktx:$navigation_version")
 
-    // AndroidX without Kotlin:
+    // Projects WITHOUT Kotlin support:
     // implementation("androidx.navigation:navigation-fragment:$navigation_version")
     // implementation("androidx.navigation:navigation-ui:$navigation_version")
-
-    // Pre-AndroidX with Kotlin:
-    // implementation("android.arch.navigation:navigation-fragment-ktx:$latest_version")
-    // implementation("android.arch.navigation:navigation-ui-ktx:$latest_version")
-
-    // Pre-AndroidX without Kotlin:
-    // implementation("android.arch.navigation:navigation-fragment:$latest_version")
-    // implementation("android.arch.navigation:navigation-ui:$latest_version")
 
     // Other dependencies (not relevant):
     implementation(project(":framework"))

@@ -23,6 +23,7 @@ dependencies {
     val activity_version: String by rootProject.extra
     val appcompat_version: String by rootProject.extra
     val core_version: String by rootProject.extra
+    val fragment_version: String by rootProject.extra
     val lifecycle_version: String by rootProject.extra
     val recyclerview_version: String by rootProject.extra
     val material_version: String by rootProject.extra
@@ -33,8 +34,9 @@ dependencies {
     api("androidx.activity:activity-ktx:$activity_version")
     api("androidx.appcompat:appcompat:$appcompat_version")
     api("androidx.core:core-ktx:$core_version")
-    // Without the 'lifecycle-viewmodel' dependency, the IDE warns about not being
-    // able to find the 'HasDefaultViewModelProviderFactory' class.
+    api("androidx.fragment:fragment-ktx:$fragment_version")
+    api("androidx.lifecycle:lifecycle-common-java8:$lifecycle_version")
+    api("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
     api("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
     api("androidx.recyclerview:recyclerview:$recyclerview_version")
     api("com.google.android.material:material:$material_version")

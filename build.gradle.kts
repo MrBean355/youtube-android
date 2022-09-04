@@ -41,14 +41,8 @@ buildscript {
         classpath("com.android.tools.build:gradle:7.2.2")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${rootProject.extra["kotlin_version"]}")
 
-        /* BEGIN: section for Navigation component */
-
-        // AndroidX:
+        // This dependency is for the Navigation library:
         classpath("androidx.navigation:navigation-safe-args-gradle-plugin:${rootProject.extra["navigation_version"]}")
-        // Pre-AndroidX:
-        // classpath("android.arch.navigation:navigation-safe-args-gradle-plugin:$latest_version")
-
-        /* END: section for Navigation component */
     }
 }
 
