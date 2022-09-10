@@ -28,6 +28,7 @@ import com.github.mrbean355.android.activitycontracts.ContractsDemoActivity
 import com.github.mrbean355.android.coroutines.CoroutinesActivity
 import com.github.mrbean355.android.dagger2.ui.ViewHeroesActivity
 import com.github.mrbean355.android.databinding.CreatePokemonActivity
+import com.github.mrbean355.android.menuprovider.MenuDemoActivity
 import com.github.mrbean355.android.navigation.NavigationLandingActivity
 import com.github.mrbean355.android.room.ViewPokemonActivity
 
@@ -64,6 +65,7 @@ private val DemoItems = listOf(
     R.string.action_data_binding to CreatePokemonActivity::class.java,
     R.string.action_enhanced_adapter to com.github.mrbean355.android.yt.enhancedadapter.ViewPokemonActivity::class.java,
     R.string.action_navigation to NavigationLandingActivity::class.java,
+    R.string.action_options_menu_provider to MenuDemoActivity::class.java,
     R.string.action_room to ViewPokemonActivity::class.java,
     R.string.action_view_model to com.github.mrbean355.android.viewmodel.ViewPokemonActivity::class.java
 )

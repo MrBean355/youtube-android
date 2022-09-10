@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toggle_fragment_visibility">Toggle</string>
+    <string name="menu_item_activity">Activity</string>
+    <string name="menu_item_fragment">Fragment</string>
+    <string name="demo_fragment_image_description">Waving hand icon</string>
+    <string name="demo_fragment_text">Hello from the fragment!</string>
+    <string name="msg_activity_menu_clicked">Activity menu clicked</string>
+    <string name="msg_fragment_menu_clicked">Fragment menu clicked</string>
+</resources>

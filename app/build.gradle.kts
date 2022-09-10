@@ -38,6 +38,7 @@ dependencies {
     implementation(project(":data-binding"))
     implementation(project(":enhanced-adapter"))
     implementation(project(":navigation"))
+    implementation(project(":options-menu-provider"))
     implementation(project(":room"))
     implementation(project(":view-model"))
 }

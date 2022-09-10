@@ -9,6 +9,7 @@ include(
     ":data-binding",
     ":enhanced-adapter",
     ":navigation",
+    ":options-menu-provider",
     ":room",
     ":view-model",
 )

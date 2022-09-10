@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/demo_fragment_menu_item"
+        android:title="@string/menu_item_fragment"
+        app:showAsAction="ifRoom" />
+
+</menu>
