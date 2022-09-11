@@ -11,14 +11,15 @@ Demo projects are split into separate folders within this repository, check them
 If you want to open the code in Android Studio, you'll need to open the root folder.
 Note that you will need to build with JDK 11, which comes bundled with Android Studio.
 
-- [Activity contracts](activity-contracts/README.md): simplified handling of `Activity` results
-- [Coroutine basics](coroutines/README.md): Kotlin coroutine basics on Android
-- [Dagger 2](dagger-2/README.md): dependency injection
-- [Data binding](data-binding/README.md): crash course on the data binding library
-- [EnhancedAdapter](enhanced-adapter/README.md): a `RecyclerView.Adapter` extension
-- [Navigation](navigation/README.md): handle everything needed for in-app navigation
-- [Room](room/README.md): fluent SQLite database access
-- [ViewModel](view-model/README.md): manage UI-related data in a lifecycle-conscious way
+- [Activity contracts](activity-contracts): simplified handling of `Activity` results
+- [Coroutine basics](coroutines): Kotlin coroutine basics on Android
+- [Dagger 2](dagger-2): dependency injection
+- [Data binding](data-binding): crash course on the data binding library
+- [EnhancedAdapter](enhanced-adapter): a `RecyclerView.Adapter` extension
+- [Navigation](navigation): handle everything needed for in-app navigation
+- [Options Menu Provider](options-menu-provider): lifecycle-aware API for adding options menu items from fragments
+- [Room](room): fluent SQLite database access
+- [ViewModel](view-model): manage UI-related data in a lifecycle-conscious way
 
 Some samples live in separate repositories:
 - [Dagger Hilt](https://github.com/MrBean355/dagger-hilt): Simplified Dagger 2 usage on Android
