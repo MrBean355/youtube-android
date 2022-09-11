@@ -24,9 +24,11 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import androidx.core.view.MenuProvider
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Lifecycle
 
-class MenuDemoFragment : Fragment() {
+class MenuDemoFragment : Fragment(), MenuProvider {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         return ComposeView(requireContext()).apply {
@@ -52,15 +54,19 @@ class MenuDemoFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setHasOptionsMenu(true)
+
+        // Only add the MenuProvider while the fragment's view lifecycle is 'resumed':
+        activity?.addMenuProvider(this, viewLifecycleOwner, Lifecycle.State.RESUMED)
     }
 
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu_fragment_demo, menu)
+    override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
+        // Inflate the menu's XML file as usual:
+        menuInflater.inflate(R.menu.menu_fragment_demo, menu)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.demo_fragment_menu_item) {
+    override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
+        // Handle the menu item click as usual:
+        if (menuItem.itemId == R.id.demo_fragment_menu_item) {
             Toast.makeText(requireContext(), R.string.msg_fragment_menu_clicked, Toast.LENGTH_SHORT).show()
             return true
         }
