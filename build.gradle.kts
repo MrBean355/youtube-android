@@ -5,7 +5,7 @@ buildscript {
         set("activity_version", "1.5.1")
         set("appcompat_version", "1.5.0")
         set("compose_version", "1.2.1")
-        set("compose_compiler_version", "1.3.0")
+        set("compose_compiler_version", "1.3.1")
         set("core_version", "1.8.0")
         set("fragment_version", "1.5.2")
         set("lifecycle_version", "2.5.1")
