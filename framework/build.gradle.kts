@@ -43,11 +43,12 @@ dependencies {
     api("com.squareup.retrofit2:retrofit:$retrofit_version")
     api("com.squareup.retrofit2:converter-gson:$retrofit_version")
 
-    api("androidx.compose.ui:ui:$compose_version")
-    api("androidx.compose.ui:ui-tooling:$compose_version")
-    api("androidx.compose.foundation:foundation:$compose_version")
-    api("androidx.compose.material:material:$compose_version")
-    api("androidx.compose.material:material-icons-core:$compose_version")
-    api("androidx.compose.material:material-icons-extended:$compose_version")
+    api(platform("androidx.compose:compose-bom:$compose_version"))
+    api("androidx.compose.ui:ui")
+    api("androidx.compose.ui:ui-tooling")
+    api("androidx.compose.foundation:foundation")
+    api("androidx.compose.material:material")
+    api("androidx.compose.material:material-icons-core")
+    api("androidx.compose.material:material-icons-extended")
     api("androidx.activity:activity-compose:$activity_version")
 }

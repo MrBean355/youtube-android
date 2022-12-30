@@ -21,7 +21,6 @@ android {
 dependencies {
     val coroutines_version: String by rootProject.extra
     val core_testing_version: String by rootProject.extra
-    val activity_version: String by rootProject.extra
     val junit_version: String by rootProject.extra
     val mockito_inline_version: String by rootProject.extra
     val mockito_kotlin_version: String by rootProject.extra
