@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+    namespace = "com.github.mrbean355.android.framework"
     compileSdk = rootProject.extra["compile_sdk"] as Int
     defaultConfig {
         minSdk = rootProject.extra["min_sdk"] as Int

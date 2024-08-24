@@ -5,6 +5,7 @@ plugins {
 }
 
 android {
+    namespace = "com.github.mrbean355.android"
     compileSdk = rootProject.extra["compile_sdk"] as Int
     defaultConfig {
         applicationId = "com.github.mrbean355.android"

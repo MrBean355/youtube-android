@@ -14,14 +14,14 @@ class PokemonAdapter : EnhancedAdapter<Pokemon, PokemonAdapter.ViewHolder>(Pokem
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        return ViewHolder(inflater.inflate(R.layout.item_pokemon, parent, false))
+        return ViewHolder(inflater.inflate(com.github.mrbean355.android.framework.R.layout.item_pokemon, parent, false))
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val itemAt = getItemAt(position)
         holder.name.text = itemAt.name
         holder.url.text = itemAt.url
-        holder.itemView.setBackgroundColor(ContextCompat.getColor(holder.itemView.context, if (isItemSelected(position)) R.color.colorAccent else android.R.color.transparent))
+        holder.itemView.setBackgroundColor(ContextCompat.getColor(holder.itemView.context, if (isItemSelected(position)) com.github.mrbean355.android.framework.R.color.colorAccent else android.R.color.transparent))
         holder.itemView.setOnClickListener {
             onItemClicked(holder.bindingAdapterPosition)
         }
@@ -36,8 +36,8 @@ class PokemonAdapter : EnhancedAdapter<Pokemon, PokemonAdapter.ViewHolder>(Pokem
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val name: TextView = itemView.findViewById(R.id.pokemon_name)
-        val url: TextView = itemView.findViewById(R.id.pokemon_url)
+        val name: TextView = itemView.findViewById(com.github.mrbean355.android.framework.R.id.pokemon_name)
+        val url: TextView = itemView.findViewById(com.github.mrbean355.android.framework.R.id.pokemon_url)
     }
 }
 

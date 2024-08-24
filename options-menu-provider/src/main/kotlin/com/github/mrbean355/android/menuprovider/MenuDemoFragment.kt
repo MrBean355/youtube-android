@@ -39,7 +39,7 @@ class MenuDemoFragment : Fragment(), MenuProvider {
                 ) {
                     Image(
                         painter = rememberVectorPainter(Icons.Default.WavingHand),
-                        colorFilter = ColorFilter.tint(colorResource(R.color.colorAccent)),
+                        colorFilter = ColorFilter.tint(colorResource(com.github.mrbean355.android.framework.R.color.colorAccent)),
                         contentDescription = stringResource(R.string.demo_fragment_image_description),
                         modifier = Modifier.size(48.dp)
                     )

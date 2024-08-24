@@ -9,6 +9,7 @@ plugins {
 }
 
 android {
+    namespace = "com.github.mrbean355.android.navigation"
     compileSdk = rootProject.extra["compile_sdk"] as Int
     defaultConfig {
         minSdk = rootProject.extra["min_sdk"] as Int
